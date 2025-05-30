@@ -1,0 +1,43 @@
+/**Link to the Orbitron font**/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/**Global CSS**/
+body{
+    max-width: 100%;
+    font-size: 130%;
+    font-family: 'Orbitron', sans-serif;
+}
+main{
+    margin: auto;
+    width: 450px;
+    height: 550px;
+    padding: 5px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+/**Welcome screen**/
+
+/**Game Screen**/
+.grid_square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+}
+
+.screen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
