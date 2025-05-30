@@ -1,4 +1,4 @@
-tion//Game Variables
+//Game Variables
 let game = {
     score: 0,
     currentGame: [],
@@ -6,7 +6,7 @@ let game = {
     turnNumber: 0,
     lives: 3,
     lastButton: "",
-    allowInput: false,
+    turnInProgress: false,
     endGame: false,
     choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 }
@@ -31,8 +31,8 @@ function startGame(){
     for (let gridSquare of document.getElementsByClassName("grid_square")) {
         if (gridSquare.getAttribute("data-listener") !== "true"){//Checks if it has a data listener of false
             gridSquare.addEventListener("click", (e) => {//Adds a click event listener to the square
-                if(game.currentGame.length > 0 && !allowInput) {//Checks if the length is more than 0 and if input is set to true
-                    let move = e.target.getAttribute("id");//Gets the id of the clicked square then stores it in the variable move
+                if(game.currentGame.length > 0 && !game.turnInProgress) { //Checks if the length is more than 0 and if input is set to true
+                    let move = e.target.getAttribute("id"); //Gets the id of the clicked square then stores it in the variable move
                     game.lastButton = move; //Stores the move within the last button variable 
                     lightUp(move); //Lights up the square that has been clicked
                     game.playerMoves.push(move); //Adds the 'move' to the player moves variable
@@ -50,8 +50,7 @@ function startGame(){
 //addTurn function empties the player moves variable and then extends and displays the sequence
 function addTurn(){
     game.playerMoves = [];
-    let random = game.choices[(Math.floor(Math.random()*9))];
-    game.currentGame.push(random);
+    game.currentGame.push(game.choices[(Math.floor(Math.random()*9))]);
     showTurns();
 }
 
@@ -65,7 +64,55 @@ function showLives(){ //Displays the players lives
 
 function lightUp(sqr){ //Adds the class 'lit' to relevent square then removes the class after a 300 milliseconds delay
     document.getElementById(sqr).classList.add("lit");
-    seTimeout(() => {
+    setTimeout(() => {
         document.getElementById(sqr).classList.remove("lit");
-    }, 300);
+    }, 400);
+}
+
+function showTurns(){
+    game.turnInProgress = true;
+    game.turnNumber = 0;
+    let turns = setInterval(() => {
+        lightUp(game.currentGame[game.turnNumber]);
+        game.turnNumber++;
+        if (game.turnNumber >= game.currentGame.length){
+            clearInterval(turns);
+            game.turnInProgress = false;
+        }
+    }, 800);
+}
+
+function playerTurn(){
+    let n = game.playerMoves.length -1;
+    if (game.currentGame[n] === game.playerMoves[n]){
+        if (game.currentGame.length === game.playerMoves.length){
+            game.score++;
+            showLives();
+            showScore();
+            addTurn();
+        }
+    } else{
+        game.lives = game.lives -1;
+        showLives()
+        if (game.lives == 0){
+            endGame();
+        } else {
+            game.playerMoves=[];
+            setTimeout(() => {
+                showTurns();
+            }, 600);
+        }
+    }
+}
+
+function endGame() {
+    $("#game_screen").addClass("hidden");
+    $("#end_screen").removeClass("hidden");
+    setTimeout(() => {
+        $("main").on("click", function (){
+            $("#end_screen").addClass("hidden");
+            $("#welcome_screen").removeClass("hidden");
+    });
+    })
+
 }

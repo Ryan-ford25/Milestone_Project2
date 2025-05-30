@@ -31,6 +31,10 @@ ul{
     display: none;
 }
 
+.lit{
+    opacity: 0.4;
+}
+
 /**Welcome screen**/
 
 /**Game Screen**/
@@ -45,6 +49,34 @@ ul{
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
+}
+
+.sq1{
+    background-color: #2a1646;
+}
+.sq2{
+    background-color: #b65252;
+}
+.sq3{
+    background-color: #663464;
+}
+.sq4{
+    background-color: #8c264a;
+}
+.sq5{
+    background-color: #975269;
+}
+.sq6{
+    background-color: #ff7668;
+}
+.sq7{
+    background-color: #f46e33;
+}
+.sq8{
+    background-color: #f38373;
+}
+.sq9{
+    background-color: #f4a850;
 }
 
 /**Rules Screen**/
