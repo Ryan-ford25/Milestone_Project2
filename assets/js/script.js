@@ -11,6 +11,10 @@ let game = {
     choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
 }
 
+function openRules(){
+    
+}
+
 function startGame(){
     game.lives = 3;
     game.score = 0;
@@ -35,6 +39,18 @@ function startGame(){
     addTurn();
 }
 
-function openRules(){
-    
+//addTurn function empties the player moves variable and then displays the next sequence
+function addTurn(){
+    game.playerMoves = [];
+    let random = game.choices[(Math.floor(Math.random()*9))];
+    game.currentGame.push(random);
+    showTurns();
+}
+
+function showScore(){ //Displays the players score
+    document.getElementById("score").innerText = `Score: ${game.score}`
+}
+
+function showLives(){ //Displays the players lives
+    document.getElementById("lives").innerText = `Lives: ${game.lives}`
 }
