@@ -12,7 +12,13 @@ let game = {
 }
 
 function openRules(){
-    
+    $("#rules_screen").removeClass("hidden");
+    $("#welcome_screen").addClass("hidden");
+    $("#start2").on("click", function(){
+        $("#rules_screen").addClass("hidden");
+        $("#game_screen").removeClass("hidden");
+        startGame();
+    })
 }
 
 function startGame(){
@@ -53,4 +59,11 @@ function showScore(){ //Displays the players score
 
 function showLives(){ //Displays the players lives
     document.getElementById("lives").innerText = `Lives: ${game.lives}`
+}
+
+function lightUp(sqr){ //Adds the class 'lit' to relavent square then removes the class after a 300 milliseconds delay
+    document.getElementById(sqr).classList.add("lit");
+    seTimeout(() => {
+        document.getElementById(sqr).classList.remove("lit");
+    }, 300);
 }
