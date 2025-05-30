@@ -22,6 +22,8 @@ function openRules(){
 }
 
 function startGame(){
+    $("#welcome_screen").addClass("hidden");
+    $("#game_screen").removeClass("hidden");
     game.lives = 3;
     game.score = 0;
     game.playermoves = [];
