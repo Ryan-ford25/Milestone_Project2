@@ -12,12 +12,13 @@ body{
 }
 
 ul{
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
 .view_area{
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 10px;
     text-align: center;
