@@ -9,6 +9,7 @@ let game = {
     turnInProgress: false,
     endGame: false,
     choices: ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"],
+    turnInterval: null,
 }
 
 function openRules(){ //When the rule button is clicked the class 'hidden' will be added to the welcome screen and removed from rules screen so that the rules can be displayed.
@@ -17,13 +18,17 @@ function openRules(){ //When the rule button is clicked the class 'hidden' will 
     $("#start2").on("click", function(){
         $("#rules_screen").addClass("hidden");
         $("#game_screen").removeClass("hidden");
-        startGame();
+        newGame();
     })
 }
 
 function startGame(){
-    $("#welcome_screen").addClass("hidden");//Adds the hidden class to the welcome screen to hide it.
-    $("#game_screen").removeClass("hidden");//Removes the hidden class from game screen to show the playing area.
+    $("#welcome_screen").addClass("hidden");
+    $("#game_screen").removeClass("hidden");
+    newGame();
+}
+
+function newGame(){
     game.lives = 3;//Sets the game variables at the start of every game.
     game.score = 0;
     game.playermoves = [];
@@ -72,11 +77,15 @@ function lightUp(sqr){ //Adds the class 'lit' to relevent square then removes th
 function showTurns(){
     game.turnInProgress = true;
     game.turnNumber = 0;
-    let turns = setInterval(() => {
+    if (game.turnInterval !== null){
+        clearInterval(game.turnInterval);
+    }
+    game.turnInterval = setInterval(() => {
         lightUp(game.currentGame[game.turnNumber]);
         game.turnNumber++;
         if (game.turnNumber >= game.currentGame.length){
-            clearInterval(turns);
+            clearInterval(game.turnInterval);
+            game.turnInterval = null;
             game.turnInProgress = false;
         }
     }, 800);
@@ -100,7 +109,7 @@ function playerTurn(){
             game.playerMoves=[];
             setTimeout(() => {
                 showTurns();
-            }, 600);
+            }, 800);
         }
     }
 }
@@ -108,11 +117,8 @@ function playerTurn(){
 function endGame() {
     $("#game_screen").addClass("hidden");
     $("#end_screen").removeClass("hidden");
-    setTimeout(() => {
-        $("main").on("click", function (){
-            $("#end_screen").addClass("hidden");
-            $("#welcome_screen").removeClass("hidden");
-    });
+    $("#end_screen").on("click", function(){
+        $("#end_screen").addClass("hidden");
+        $("#welcome_screen").removeClass("hidden");
     })
-
 }
