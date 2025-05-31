@@ -3,21 +3,24 @@
 
 /**Global CSS**/
 body{
+    background-color: #001433;
+    color: #E7C358;
     padding: 5px;
     max-width: 100%;
     font-size: 130%;
     font-family: 'Orbitron', sans-serif;
 }
-main{
+
+ul{
+    list-style: none;
+}
+
+.view_area{
     margin: auto;
     width: 450px;
     height: 550px;
     padding: 5px;
     text-align: center;
-}
-
-ul{
-    list-style: none;
 }
 
 .screen{
@@ -33,6 +36,15 @@ ul{
 
 .lit{
     opacity: 0.4;
+}
+
+/**Logo**/
+#logo{
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /**Game Screen**/

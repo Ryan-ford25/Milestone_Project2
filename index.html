@@ -19,12 +19,13 @@
     <!--Main Header-->
     <header>
         <h1 class="hidden">Echoes of light</h1>
+        <img id="logo" src="assets/images/Logo.png" alt="Echoes of light logo">
     </header>
 
     <!--Main content-->
     <main>
         <!--Welcome screen-->
-        <div id ="welcome_screen">
+        <div id ="welcome_screen" class="view_area">
             <ul>
                 <li>Welcome to the <strong>Echoes of light</strong> memory game!</li>
                 <li>Do you have what it takes to reach the final level?</li>
@@ -37,7 +38,7 @@
         </div>
 
         <!--Game Screen-->
-        <div id="game_screen" class="hidden">
+        <div id="game_screen" class="hidden view_area">
             <div id="grid" >
                 <div data-listener="false" id="button1" class="sq1 grid_square"></div>
                 <div data-listener="false" id="button2" class="sq2 grid_square"></div>
@@ -49,14 +50,14 @@
                 <div data-listener="false" id="button8" class="sq8 grid_square"></div>
                 <div data-listener="false" id="button9" class="sq9 grid_square"></div>
             </div>
-            <div id="counts" class="screen">
+            <div id="counts" class="screen view_area">
                 <div class="score_count" id="score">Level: 0</div>
                 <div class="life_count" id="lives">Lives: 3</div>
             </div>
         </div>
 
         <!--Rules screen-->
-        <div id="rules_screen" class="hidden">
+        <div id="rules_screen" class="hidden view_area">
             <h2>Rules</h2>
             <p>The rules for this game are simple.</p>
             <ul>
@@ -77,12 +78,12 @@
         </div>
 
         <!--Incorrect move message-->
-        <div id="incorrect" class="hidden">
+        <div id="incorrect" class="hidden view_area">
             <p><Strong>Nope that was not the sequence try again!</Strong></p>
         </div>
         
         <!--End screen-->
-        <div id="end_screen" class="hidden">
+        <div id="end_screen" class="hidden view_area">
             <h1><strong>You ran out of lives!</strong></h1>
             <p>Click anywhere to continue..</p>
         </div>
