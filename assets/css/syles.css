@@ -17,17 +17,18 @@ ul{
 
 .view_area{
     margin: auto;
-    width: 450px;
-    height: 550px;
-    padding: 5px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
     text-align: center;
 }
 
 .screen{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 5px;
+    justify-content:center;
+    gap: 30px;
 }
 
 .hidden{
@@ -40,17 +41,19 @@ ul{
 
 /**Logo**/
 #logo{
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /**Game Screen**/
 .grid_square{
-    height: 150px;
-    width: 150px;
+    width: 33vw;
+    height: 33vw;
+    max-height: 150px;
+    max-width: 150px;
     border: 1px solid black;
     border-radius: 20px;
 }
@@ -89,6 +92,33 @@ ul{
     background-color: #2a1142;
 }
 
-/**Rules Screen**/
+/**Media Queries**/
 
-/**End screen**/
+/**Uses this CSS code on screens 468px or less(Mobile phones)**/
+@media only screen and (max-width: 468px) {
+    body {
+        font-size : 100%;
+    }
+
+    grid_square{
+        width: 28vw;
+        height: 28vw;
+    }
+    
+    .screen{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/**Uses this CSS code on screens 768px or less down to 468(Tablets)**/
+@media only screen and (max-width: 768px){
+    .grid_square {
+        width: 22vw;
+        height: 22vw;
+    }
+    .screen{
+        justify-content: space-evenly;
+    }
+}

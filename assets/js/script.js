@@ -28,6 +28,7 @@ function startGame(){
     newGame();
 }
 
+
 function newGame(){
     game.lives = 3;//Sets the game variables at the start of every game.
     game.score = 0;
