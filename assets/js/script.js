@@ -12,7 +12,8 @@ let game = {
     turnInterval: null,
 }
 
-function openRules(){ //When the rule button is clicked the class 'hidden' will be added to the welcome screen and removed from rules screen so that the rules can be displayed.
+//When the rule button is clicked the class 'hidden' will be added to the welcome screen and removed from rules screen so that the rules can be displayed.
+function openRules(){
     $("#rules_screen").removeClass("hidden");
     $("#welcome_screen").addClass("hidden");
     $("#start2").on("click", function(){
@@ -22,6 +23,7 @@ function openRules(){ //When the rule button is clicked the class 'hidden' will 
     })
 }
 
+//startGame function adds the hidden class to the welcome screen and removes it from the game screen in order to display the grid
 function startGame(){
     $("#welcome_screen").addClass("hidden");
     $("#game_screen").removeClass("hidden");
