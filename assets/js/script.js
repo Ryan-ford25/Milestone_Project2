@@ -115,9 +115,14 @@ function playerTurn(){
     }
 }
 
+function endScore(){
+    document.getElementById("end_score").innerText = `You made it to Level: ${game.score}`
+}
+
 function endGame() {
     $("#game_screen").addClass("hidden");
     $("#end_screen").removeClass("hidden");
+    endScore();
     $("#end_screen").on("click", function(){
         $("#end_screen").addClass("hidden");
         $("#welcome_screen").removeClass("hidden");
