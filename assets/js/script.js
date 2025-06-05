@@ -33,6 +33,10 @@ function startGame(){
 
 //Starts a new game resetting all game variables to their default values
 function newGame(){
+    const savedScore = localStorage.getItem("hScore");
+    if (savedScore !== null){
+        game.highScore = parseInt(savedScore);
+    }
     game.lives = 3;
     game.score = 0;
     game.playerMoves = [];
