@@ -5,6 +5,7 @@ let game = {
     playerMoves: [],
     turnNumber: 0,
     lives: 3,
+    highScore: 0,
     lastButton: "",
     turnInProgress: false,
     endGame: false,
@@ -34,7 +35,7 @@ function startGame(){
 function newGame(){
     game.lives = 3;
     game.score = 0;
-    game.playermoves = [];
+    game.playerMoves = [];
     game.currentGame= [];
     for (let gridSquare of document.getElementsByClassName("grid_square")) {
         if (gridSquare.getAttribute("data-listener") !== "true"){             //Checks if it has a data listener of false
@@ -53,6 +54,7 @@ function newGame(){
     showLives();
     showScore();                                                              //Runs the corresponding function.
     addTurn();
+    highScore();
 }
 
 //addTurn function empties the player moves variable and then extends and displays the sequence
@@ -79,7 +81,6 @@ function lightUp(sqr){
         document.getElementById(sqr).classList.remove("lit");
     }, 400);
 }
-
 
 //ShowTurns function displays the sequence to the player
 function showTurns(){
@@ -128,12 +129,21 @@ function endScore(){
     document.getElementById("end_score").innerText = `You made it to Level: ${game.score}`
 }
 
+function highScore(){
+    if(game.score > game.highScore){
+        game.highScore = game.score;
+        localStorage.setItem("hScore", game.highScore);
+    }
+    document.getElementById("high_score").innerText = `High Score: ${game.highScore}`
+}
+
 
 //endGame function displays a message after the lives have reached 0 and then waits for an input from the user 
 function endGame() {
     $("#game_screen").addClass("hidden");             //Adds the css class 'hidden' to the game screen in order to hide it 
     $("#end_screen").removeClass("hidden");            //Removes the class 'hidden' to display the end screen message
-    endScore();                                       //Runs the endScore function to display the level reached
+    endScore();    
+    highScore();                                    //Runs the endScore function to display the level reached
     $("#end_screen").on("click", function(){          //users a click listener to wait for input from the user
         $("#end_screen").addClass("hidden");           //When the user clicks on end screen the 'hidden' class will be added to the end screen to hide it
         $("#welcome_screen").removeClass("hidden");    //Removes the class 'hidden' from welcome screen to display it again allowing the user to restart

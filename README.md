@@ -2,23 +2,23 @@
 
 ---
 
-![DJ Silver Soul's Pop Quiz shown in a variety of screen sizes](documentation/testing-responsive-devices.webp)
+![[Echoes of Light memory game displayed on different devices]](assets/documentation/am_i_responsive.png)
 
-Visit the deployed site here: [DJ Silver Soul's Pop Quiz](https://sd-powell.github.io/portfolio_project_2/)
+Visit the deployed site here: [Echoes of Light](https://ryan-ford25.github.io/Milestone_Project2/)
 
 ## Introduction
 
-**DJ Silver Soul Pop Quiz** is an interactive, disco-themed music trivia game designed to test and entertain players with questions about popular music from past to present.
+**Echoes of Light** is an interactive memory game designed to entertain, test and enhance the users memorising skills.
 
-**The aim and purpose of the site** is to provide an engaging and competitive platform for music lovers to challenge their knowledge while enjoying a fun, fast-paced gaming experience. By blending entertainment with learning, the quiz enhances memory, supports cognitive development, and encourages critical thinking.
+**The aim and purpose of the site** is to provide an engaging and competitive experience for people who would like to either test or improve their memory.
 
-**The goal of the site** is to create an immersive and enjoyable quiz experience that keeps players coming back for more. By incorporating time-based challenges, a leaderboard system, and a variety of music-related questions, the game fosters a sense of excitement and accomplishment.
+**The goal of the site** is to create an enjoyable experience where users can keep testing and improving their skills by using incorporated features such as the leaderboard and 'highest score' counter to push themselves further which creates a thrill of acomplishment bringing the user back for more.
 
-Music quizzes enhance memory, support learning, and sharpen critical thinking. They also trigger dopamine release, improving mood and reducing stress. They help keep the brain sharp, making them both fun and beneficial.
+Memory games help to improve another cognitive function such as concentration.
 
-The game features a fast-paced multiple-choice format where players race against the clock to answer questions and secure a spot on the leaderboard. This competitive element encourages replayability, motivating players to return and beat their own high scores.
+This game features a memory challenge inspired by the classic 'Simon' game, where players must recall and repeat an increasingly complex sequence. Players aim to achieve high scores to get top spot on the leaderboard. The competetive aspect encourages replayability, pushing players to sharpen their memory and beat personal bests.
 
-**The target audience is music enthusiasts of all ages** who enjoy trivia, competition, and testing their knowledge of popular music history. The quiz is designed for casual players looking for quick entertainment, as well as dedicated music fans eager to prove their expertise.
+**The target audience is all ages** who enjoy competition, and testing their memory. It is designed for both the casual player who would want to quickly see how good their memory is and the more competetive players who want to work to improve their memory overtime.
 
 ---
 
@@ -79,15 +79,15 @@ The game features a fast-paced multiple-choice format where players race against
 
 ## User Experience (UX)
 
-The quiz is built with the player in mind, offering an engaging and immersive experience. Designed for music enthusiasts of all ages, from casual listeners to die-hard fans, it provides an interactive challenge tailored to their knowledge levels. Below are the key user-centric principles that make the game fun, intuitive, and rewarding for all music lovers:
+The game has been built with solely the user in mind, it offers an engaging and immersive experienced designed for all ages. Below are the key user-centric principles that make it fun and rewarding for all users:
 
-1. **Engaging & Fun Experience** – The quiz is designed to be entertaining, immersive, and enjoyable for all music lovers
-2. **Easy-to-Use Interface** – A clean, intuitive UI ensures seamless navigation and accessibility for players of all skill levels
-3. **Responsive & Fast-Paced Gameplay** – Players answer multiple-choice questions against the clock, keeping the game dynamic and exciting
+1. **Engaging & Fun Experience** – The game is designed to be entertaining, immersive, and enjoyable for everyone
+2. **Easy-to-Use Interface** – A clean, intuitive UI ensures seamless navigation and accessibility for players of all ages
+3. **Responsive & Fast-Paced Gameplay** – Playeres memorise and relay a given sequence that gets longer each round
 4. **Competitive & Replayable** – A leaderboard system encourages users to return, improve their scores, and challenge friends
-5. **Interactive Feedback** – Instant response to answers (correct/incorrect) enhances the learning experience and player satisfaction
-6. **Mobile-Friendly Design** – Optimized for desktop and mobile play to ensure accessibility anytime, anywhere
-7. **Encourages Learning & Memory Recall** – Combining music knowledge with trivia boosts memory retention and cognitive skills
+5. **Interactive Feedback** – Instant updates to the score and lives left for correct or incorrect inputs provides a learning experience and player satisfaction
+6. **Mobile-Friendly Design** – The game has been optimised for all screen sizes from desktops to mobiles allowing better accessibility from anywhere at any time
+7. **Encourages Memory Recall** – Boosts memory rentention and cognitive functions
 
 <br>
 <hr>
@@ -98,16 +98,14 @@ The quiz is built with the player in mind, offering an engaging and immersive ex
 
 #### New Site Users
 
-- As a new site user, I want to have a clear and accessible way to navigate through different sections, so that I can explore the quiz, rules, and leaderboard without difficulty.
+- As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty.
 - As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.
-- As a new site user, I want to start my first quiz easily, so that I can jump straight into the fun.
-- As a new site user, I want to play against a timer, so that I feel a sense of challenge and excitement while answering questions quickly.
+- As a new site user, I want to start my first game quickly, so that I can jump straight into the fun.
 - As a new site user, I want to see my score and progress, so that I feel motivated to improve and replay.
-- As a new site user, I want to receive feedback on my answer choices, so that I can learn from my mistakes and improve my knowledge.
 
 #### Returning Site Users
 
--  As a returning site user, I want the quiz experience to be consistent and function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.
+- As a returning site user, I want the game to function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.
 - As a returning site user, I want to select the difficulty level of quiz questions, so that I can tailor the challenge to my knowledge and skill level.
 - As a returning site user, I want to easily restart the quiz, so that I can immediately try again if I want to improve my score.
 
