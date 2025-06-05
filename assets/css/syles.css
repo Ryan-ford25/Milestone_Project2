@@ -117,14 +117,3 @@ li{
         gap: 5px;
     }
 }
-
-/**Uses this CSS code on screens 768px or less down to 468(Tablets)**/
-@media only screen and (max-width: 768px){
-    .grid_square {
-        width: 22vw;
-        height: 22vw;
-    }
-    .screen{
-        justify-content: space-evenly;
-    }
-}

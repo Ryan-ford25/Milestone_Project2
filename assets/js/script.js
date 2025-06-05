@@ -17,9 +17,11 @@ let game = {
 function openRules(){
     $("#rules_screen").removeClass("hidden");
     $("#welcome_screen").addClass("hidden");
+    $("#leaderboard_screen").addClass("hidden");
     $("#start2").on("click", function(){
         $("#rules_screen").addClass("hidden");
         $("#game_screen").removeClass("hidden");
+        $("#leaderboard_screen").addClass("hidden");
         newGame();
     })
 }
@@ -40,6 +42,7 @@ function openLeaderboard(){
 function startGame(){
     $("#welcome_screen").addClass("hidden");
     $("#game_screen").removeClass("hidden");
+    $("#leaderboard_screen").addClass("hidden");
     newGame();
 }
 

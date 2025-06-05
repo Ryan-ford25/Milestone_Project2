@@ -106,13 +106,10 @@ The game has been built with solely the user in mind, it offers an engaging and 
 #### Returning Site Users
 
 - As a returning site user, I want the game to function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.
-- As a returning site user, I want to select the difficulty level of quiz questions, so that I can tailor the challenge to my knowledge and skill level.
-- As a returning site user, I want to easily restart the quiz, so that I can immediately try again if I want to improve my score.
 
 #### Frequent Visitor Goals
 
-- As a frequent site user, I want to see a leaderboard of top quiz scores, so that I can compare my performance with others and stay motivated to improve.
-- As a frequent site user, I want to have a fair scoring system where I earn points based on correct answers, so that I feel rewarded for my knowledge and accuracy.
+- As a frequent site user, I want to see a leaderboard of top scores, so that I can compare my performance with others and stay motivated to improve.
 
 ---
 
