@@ -149,21 +149,24 @@ function endScore(){
     document.getElementById("end_score").innerText = `You made it to Level: ${game.score}`
 }
 
+//newHighScoreFunction is used to display the 'New high score!' message when a new high score is achieved
 function newHighScore(){
-    document.getElementById("high_score_message").classList.remove("hidden");
-    document.getElementById("high_score_message").innerText = `You got a new High Score: ${game.highScore}! Congratulations`
-    setTimeout(() => {
-        document.getElementById("high_score_message").classList.add("hidden");
+    document.getElementById("high_score_message").classList.remove("hidden");                       //Removes the class 'hidden' from the element that has the id of 'high_score_message'
+    document.getElementById("high_score_message").innerText = `New High Score! Congratulations`     //Displays the message 'New High Score! Congratulations'
+    setTimeout(() => {                                                                              //Sets a timeout of 2 seconds
+        document.getElementById("high_score_message").classList.add("hidden");                      //Adds the class 'hidden' to element with id 'high_score_message'
     }, 2000);
 }
 
-function highScore(){
-    if(game.score > game.highScore){
-        game.highScore = game.score;
-        localStorage.setItem("hScore", game.highScore);
-        newHighScore()
+
+//HighScore function updates the 'High score: ' display
+function highScore(){                                                      
+    if(game.score > game.highScore){                                                    //Checks if the current game score is higher than what is stored in current game.highScore variable
+        game.highScore = game.score;                                                   //If it is then the game.highScore variable will be updated
+        localStorage.setItem("hScore", game.highScore);                                //Stores the score locally in the browser inside the variable 'hScore'
+        newHighScore()                                                                 //Runs the newHighScore function
     }
-    document.getElementById("high_score").innerText = `High Score: ${game.highScore}`
+    document.getElementById("high_score").innerText = `High Score: ${game.highScore}` //Displays the current High score
 }
 
 

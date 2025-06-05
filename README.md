@@ -1,4 +1,4 @@
-# <span style="color: #4f9aff">DJ Silver Soul Pop Quiz</span>
+# <span style="color: #4f9aff">Echoes of Light</span>
 
 ---
 
@@ -18,7 +18,7 @@ Memory games help to improve another cognitive function such as concentration.
 
 This game features a memory challenge inspired by the classic 'Simon' game, where players must recall and repeat an increasingly complex sequence. Players aim to achieve high scores to get top spot on the leaderboard. The competetive aspect encourages replayability, pushing players to sharpen their memory and beat personal bests.
 
-**The target audience is all ages** who enjoy competition, and testing their memory. It is designed for both the casual player who would want to quickly see how good their memory is and the more competetive players who want to work to improve their memory overtime.
+**The target audience is all ages** who enjoy competition, testing their memory or both! It is designed for the casual player who would want to quickly see how good their memory is and the more competetive player who would want to work to improve their memory overtime.
 
 ---
 
@@ -96,18 +96,18 @@ The game has been built with solely the user in mind, it offers an engaging and 
 
 ### User Stories
 
-#### New Site Users
+#### First-time visitor goals
 
 - As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty.
 - As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.
 - As a new site user, I want to start my first game quickly, so that I can jump straight into the fun.
 - As a new site user, I want to see my score and progress, so that I feel motivated to improve and replay.
 
-#### Returning Site Users
+#### Returning visitor goals
 
 - As a returning site user, I want the game to function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.
 
-#### Frequent Visitor Goals
+#### Frequent user goals
 
 - As a frequent site user, I want to see a leaderboard of top scores, so that I can compare my performance with others and stay motivated to improve.
 
@@ -121,25 +121,21 @@ The game has been built with solely the user in mind, it offers an engaging and 
 
 ### Colour Scheme
 
-The site's color scheme draws inspiration from the vibrant neon lights of a 1970s disco, featuring bold, electrifying hues that evoke the energy, excitement, and retro-futuristic aesthetics of the era. The glowing, high-contrast palette enhances the immersive experience, creating a visually dynamic atmosphere reminiscent of classic dance floors, shimmering reflections, and the iconic nightlife of the time.
-
 The primary colours for the site are:
-- `#1d1a21` (Dark Blue) – This deep, dark shade is used as the **main background color**, evoking the feeling of a dimly lit **disco or nightclub**. It provides a strong contrast against brighter elements, enhancing visibility and making interactive components stand out. The dark blue **reduces eye strain** and creates a sense of depth, immersing players in the quiz experience.
-- `#252733` (Blue-Gray) – Inspired by **dark mode UI design**, this color serves as a **secondary background and panel color**, ensuring that content remains clearly distinguishable. It enhances readability while maintaining the **futuristic, neon-lit aesthetic** associated with music and nightlife culture.
+- `#001433` (Dark Blue) – This deep, dark shade is used as the **main background color**. Being a cool and sophisticated color it grounds the design and creates a sense of seriousness and depth immersing the user in the game.
 
-To boost user engagement and draw attention to key areas, I selected distinct highlight colors that complemented the background visuals. These colors were defined as root variables in my CSS file, allowing for effortless adjustments across the site.
+- `#0DCAF0` (Vivid cyan): The **secondary background color** is bright and energetic used for the UI elements in order to engage and attract the users attention.
 
-- `4f9aff` (Bright Blue): Used to emphasize key UI elements, drawing user focus to interactive components.
-- `e83c5a` (Red): Clearly signals an incorrect answer, creating an instant visual cue for mistakes.
-- `4eb738` (Green): Indicates a correct answer, reinforcing success with a positive color association.
-- `f59527` (Gold): Represents the user’s score, evoking achievement and reward with a warm, celebratory tone.
+- `#E8B857` (Soft orange): Used for the text elements, as a **complimentary** color to blue it contrasts the background very well.
 
-This color scheme enhances clarity, feedback, and user experience while maintaining a cohesive, vibrant aesthetic.
+- `#008CA3` (Dark cycan): Used only in the logo to create a shadow effect.
+
+This color scheme enhances clarity, feedback, and user experience while maintaining a clean and simplistic aesthetic.
 
 <details>
 <summary>- Toggle the arrow to view the colour swatches</summary>
 
-![Hex swatch palette](documentation/hex-swatches.webp)
+<img src="assets/documentation/color_pallete.png" width="750" alt="Hex colour pallette">
 
 </details>
 
@@ -152,15 +148,7 @@ This color scheme enhances clarity, feedback, and user experience while maintain
 
 Google Fonts was used to import the selected fonts for the site, ensuring high-quality and easily accessible typography.
 
-- **h1, h2 and h3 headings** The font [Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Think%20you%20know%20your%20music%3F) was chosen because it offers a clean, modern, and highly readable design that enhances user experience while maintaining a professional and contemporary look.
-
-![Roboto Font Example](documentation/type-roboto.webp)
-
-- **paragraph elements:** The font [Inter](https://fonts.google.com/specimen/Inter) was chosen as a font pairing for Roboto because its geometric yet friendly design complements Roboto’s modern aesthetic, ensuring a harmonious and highly readable typography combination for my site.
-
-![Inter Font Example](documentation/type-inter.webp)
-
-- **social media icons:** [Font Awesome](https://fontawesome.com/) library icons were used throughout the site because they provide a versatile, scalable, and visually consistent icon set that enhances usability and complements the clean, modern aesthetic of my typography.
+- The font [Orbitron]('https://fonts.google.com/specimen/Orbitron?query=orbitronp') was chosen because it offers a clean, digital, and highly readable design that enhances user experience while maintaining a 'game' like aesthetic with a retro arcade feel.
 
 <br>
 <hr>
