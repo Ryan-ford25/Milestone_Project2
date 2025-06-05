@@ -150,14 +150,7 @@ Google Fonts was used to import the selected fonts for the site, ensuring high-q
 
 - The font [Orbitron]('https://fonts.google.com/specimen/Orbitron?query=orbitronp') was chosen because it offers a clean, digital, and highly readable design that enhances user experience while maintaining a 'game' like aesthetic with a retro arcade feel.
 
-<br>
-<hr>
-
-<a id=imagery></a>
-
-### Imagery
-
-I chose neon imagery for my site because it’s a pop quiz, and I wanted to reflect the fun, energetic vibe of an ’80s neon disco theme. The vibrant glow and retro-futuristic aesthetic create an engaging, nostalgic atmosphere that makes the quiz experience feel exciting and immersive. All images were sourced from [Adobe Stock](https://stock.adobe.com/)
+<img src="assets/documentation/orbitron_preview.PNG" alt="Orbitron font preview text">
 
 <br>
 <hr>

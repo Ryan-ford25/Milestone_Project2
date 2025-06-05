@@ -17,24 +17,28 @@ let game = {
 function openRules(){
     $("#rules_screen").removeClass("hidden");
     $("#welcome_screen").addClass("hidden");
-    $("#leaderboard_screen").addClass("hidden");
     $("#start2").on("click", function(){
         $("#rules_screen").addClass("hidden");
         $("#game_screen").removeClass("hidden");
-        $("#leaderboard_screen").addClass("hidden");
         newGame();
+    })
+    $("#leaderboard2").on("click", function(){
+        $("#rules_screen").addClass("hidden");
+        $("#leaderboard_screen").removeClass("hidden");
     })
 }
 
 function openLeaderboard(){
     $("#leaderboard_screen").removeClass("hidden");
-    $("#rules_screen").addClass("hidden");
     $("#welcome_screen").addClass("hidden");
-    $("#start2").on("click", function(){
-        $("#rules_screen").addClass("hidden");
+    $("#start3").on("click", function(){
         $("#leaderboard_screen").addClass("hidden");
         $("#game_screen").removeClass("hidden");
         newGame();
+    })
+    $("#rules2").on("click", function(){
+        $("#rules_screen").removeClass("hidden");
+        $("#leaderboard_screen").addClass("hidden");
     })
 }
 
