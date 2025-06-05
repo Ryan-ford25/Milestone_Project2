@@ -39,6 +39,7 @@
             <div class="screen">
                 <button class="screen button btn btn-info" id="start" onclick="startGame()">Start</button>
                 <button class="screen button btn btn-info" id="rules" onclick="openRules()">Rules</button>
+                <button class="screen button btn btn-info" id="rules" onClick="openLeaderboard()">Leaderboard</button>
             </div>
         </div>
 
@@ -75,7 +76,8 @@
             </ul>
             <p>Good Luck!</p>
             <div>
-                <button class = "button btn btn-info" id="start2" onClick="startGame()">Start</button>
+                <button class ="button btn btn-info" id="start2" onClick="startGame()">Start</button>
+                <button class="button btn btn-info" id="rules" onClick="openLeaderboard()">Leaderboard</button>
             </div>
         </div>
 
@@ -84,9 +86,16 @@
             <p><Strong>Nope that was not the sequence try again!</Strong></p>
         </div>
 
-        <div id="leaderboard" class="hidden view_area">
+        <!--Leaderboard screen-->
+        <div id="leaderboard_screen" class="hidden view_area">
+            <h2>Leaderboard</h2>
+            <p>Top 10 Players</p>
+            <ul>
+                <li id="current_player">Player 1</li>
+            </ul>
         </div>
 
+        <!--Message to be displayed when a new high score is reached-->
         <div id="high_score_message" class=" view_area hidden">You got a new High Score! Congratulations.</div>
         
         <!--End screen-->

@@ -24,6 +24,18 @@ function openRules(){
     })
 }
 
+function openLeaderboard(){
+    $("#leaderboard_screen").removeClass("hidden");
+    $("#rules_screen").addClass("hidden");
+    $("#welcome_screen").addClass("hidden");
+    $("#start2").on("click", function(){
+        $("#rules_screen").addClass("hidden");
+        $("#leaderboard_screen").addClass("hidden");
+        $("#game_screen").removeClass("hidden");
+        newGame();
+    })
+}
+
 //startGame function adds the hidden class to the welcome screen and removes it from the game screen in order to display the grid
 function startGame(){
     $("#welcome_screen").addClass("hidden");
@@ -136,6 +148,7 @@ function endScore(){
 
 function newHighScore(){
     document.getElementById("high_score_message").classList.remove("hidden");
+    document.getElementById("high_score_message").innerText = `You got a new High Score: ${game.highScore}! Congratulations`
     setTimeout(() => {
         document.getElementById("high_score_message").classList.add("hidden");
     }, 2000);
@@ -155,8 +168,7 @@ function highScore(){
 function endGame() {
     $("#game_screen").addClass("hidden");             //Adds the css class 'hidden' to the game screen in order to hide it 
     $("#end_screen").removeClass("hidden");            //Removes the class 'hidden' to display the end screen message
-    endScore();    
-    highScore();                                    //Runs the endScore function to display the level reached
+    endScore();                                     //Runs the endScore function to display the level reached
     $("#end_screen").on("click", function(){          //users a click listener to wait for input from the user
         $("#end_screen").addClass("hidden");           //When the user clicks on end screen the 'hidden' class will be added to the end screen to hide it
         $("#welcome_screen").removeClass("hidden");    //Removes the class 'hidden' from welcome screen to display it again allowing the user to restart
