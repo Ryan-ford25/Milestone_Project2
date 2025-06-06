@@ -33,9 +33,9 @@ li{
 .screen{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-    justify-content:center;
-    gap: 30px;
+    margin: auto, 5px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .hidden{

@@ -150,7 +150,7 @@ Google Fonts was used to import the selected fonts for the site, ensuring high-q
 
 - The font [Orbitron](https://fonts.google.com/specimen/Orbitron?query=orbitronp&preview.text=Welcome%20to%20Echoes%20of%20Light) was chosen because it offers a clean, digital, and highly readable design that enhances user experience while maintaining a 'game' like aesthetic with a retro arcade feel.
 
-<img src="assets/documentation/orbitron_preview.PNG" alt="Orbitron font preview text">
+<img src="assets/documentation/orbitron_preview.PNG" alt="Orbitron font preview text" width="750">
 
 <br>
 <hr>
@@ -159,9 +159,9 @@ Google Fonts was used to import the selected fonts for the site, ensuring high-q
 
 ### Site Functionality Flow Diagram
 
-The diagram below illustrates the overall functionality of the site, including user interactions, quiz progression, and system responses. It provides a structured view of how different components, such as API calls, score calculations, and navigation, integrate to deliver a seamless quiz experience.
+The diagram below shows the overall functionality of the webpage, including user interactions and level progression. It provides a structured view of how different components, such as variable updates and navigation integrate to deliver a seamless experience for the user.
 
-![Flow Diagram](documentation/features-functionality-diagram.webp)
+<img src="assets/documentation/workflow_diagram.PNG" alt="Workflow diagram" width="750">
 
 <br>
 <hr>
@@ -170,15 +170,15 @@ The diagram below illustrates the overall functionality of the site, including u
 
 ## Game Logic Overview
 
-The quiz game follows a structured flow to ensure an engaging and fair experience for players. It begins with the user selecting a difficulty level, which determines the set of ten questions fetched from an online API. Once the game starts, players must answer multiple-choice questions within a time limit. 
+The memory game follows a simple and structured flow to ensure a fair experience for all players. It begins with the user selecting either the 'Start', 'Rules' or 'Leaderboard' button, each displayed on the homepage, which will then show the corresponding screen. 
 
-Each question presents four possible answers, and players must select one before the timer of 15 seconds runs out. If a correct answer is chosen, their score increases by 10 points. If an incorrect answer is selected (or the timer expires), the correct answer is highlighted before moving to the next question and the player gets no points.
+Once the 'Start' button has been selected the game will switch to the game screen and start by 'lighting' up the first square in the sequence.
 
-The game continues until all questions are answered, at which point the player's final score is displayed (maximum 100 points). Players can then submit their score to a leaderboard, where high scores are stored locally in the players browser and ranked. They can choose to restart the game or exit at any point.
+The user must copy the sequence by clicking on the same squares that were shown. Each time the user correctly copies the given sequence the 'Level' variable will be updated by 1 and the sequence will be shown again with an additional square being added each time. If the sequence has not been copied correctly a life will be lost and the game will repeat the sequence, when all lives equal to 0 the end screen is displayed which will tell the user that they had ran out of lives and display the level that they reached. Players can choose to either commit their score to the leaderboard or exit to the homepage.
 
 Below is a flowchart illustrating the complete game logic:
 
-![Quiz Game Flowchart](documentation/features-functionality-pseudo.webp)
+<img src="assets/documentation/pseudo_flow_diagram.PNG" alt="Game Flow diagram" width="750">
 
 <br>
 <hr>
@@ -203,13 +203,10 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
 | ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
 
-|                   Difficulty page wireframe                   |                Quiz page wireframe                |                 Results page wireframe                  |
-| :-----------------------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------------: |
-| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | ![Quiz](documentation/mobile-wireframe-quiz.webp) | ![Results](documentation/mobile-wireframe-results.webp) |
+|                   Difficulty page wireframe                   |
+| :-----------------------------------------------------------: |
+| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
 
-|               404 page wireframe                |               500 page wireframe                |
-| :---------------------------------------------: | :---------------------------------------------: |
-| ![404](documentation/mobile-wireframe-404.webp) | ![500](documentation/mobile-wireframe-500.webp) |
 
 </details>
 
@@ -220,18 +217,13 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Tablet Wireframes </summary>
 
-|                Home page wireframe                |                Rules page wireframe                 |
-| :-----------------------------------------------: | :-------------------------------------------------: |
-| ![Home](documentation/tablet-wireframe-info.webp) | ![Rules](documentation/tablet-wireframe-rules.webp) |
+|                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
+| :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
+| ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
 
-|                   Leaderboard page wireframe                    |                   Difficulty page wireframe                   |
-| :-------------------------------------------------------------: | :-----------------------------------------------------------: |
-| ![Leaderboard](documentation/tablet-wireframe-leaderboard.webp) | ![Difficulty](documentation/tablet-wireframe-difficulty.webp) |
-
-|                Quiz page wireframe                |                 Results page wireframe                  |
-| :-----------------------------------------------: | :-----------------------------------------------------: |
-| ![Quiz](documentation/tablet-wireframe-quiz.webp) | ![Results](documentation/tablet-wireframe-results.webp) |
-
+|                   Difficulty page wireframe                   |
+| :-----------------------------------------------------------: |
+| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
 
  </details>
 
@@ -242,37 +234,13 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Desktop Wireframes </summary>
 
-- Home page wireframe
+|                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
+| :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
+| ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
 
-![Home](documentation/desktop-wireframe-info.webp)
-
-- Rules page wireframe
-
-![Rules](documentation/desktop-wireframe-rules.webp)
-
-- Leaderboard page wireframe
-
-![Leaderboard](documentation/desktop-wireframe-leaderboard.webp)
-
-- Difficulty page wireframe
-
-![Difficulty](documentation/desktop-wireframe-difficulty.webp)
-
-- Quiz page wireframe
-
-![Quiz](documentation/desktop-wireframe-quiz.webp)
-
-- Results page wireframe
-
-![Success](documentation/desktop-wireframe-results.webp)
-
-- 404 page wireframe
-
-![404](documentation/desktop-wireframe-404.webp)
-
-- 500 page wireframe
-
-![500](documentation/desktop-wireframe-500.webp)
+|                   Difficulty page wireframe                   |
+| :-----------------------------------------------------------: |
+| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
 
  </details>
 
