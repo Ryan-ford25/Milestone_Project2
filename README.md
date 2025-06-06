@@ -201,7 +201,7 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 |                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Home](assets/documentation/mobile_home_screen.PNG) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
+| ![Home](assets/documentation/mobile_home_screen.PNG) | ![Rules](assets/documentation/mobile_rules_screen.PNG) | ![Leaderboard](assets/documentation/mobile_leaderboard_screen.PNG) |
 
 
 
@@ -216,7 +216,7 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 |                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
+| ![Home](assets/documentation/tablet_home_screen.PNG) | ![Rules](assets/documentation/tablet_rules_screen.PNG) | ![Leaderboard](assets/documentation/tablet_leaderboard_screen.PNG) |
 
 
  </details>
@@ -230,35 +230,16 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 - Home page wireframe
 
-![Home](documentation/desktop-wireframe-info.webp)
+![Home](assets/documentation/desktop_home_screen.PNG)
 
 - Rules page wireframe
 
-![Rules](documentation/desktop-wireframe-rules.webp)
+![Rules](assets/documentation/desktop_rules_screen.PNG)
 
 - Leaderboard page wireframe
 
-![Leaderboard](documentation/desktop-wireframe-leaderboard.webp)
+![Leaderboard](assets/documentation/desktop_leaderboard_screen.PNG)
 
-- Difficulty page wireframe
-
-![Difficulty](documentation/desktop-wireframe-difficulty.webp)
-
-- Quiz page wireframe
-
-![Quiz](documentation/desktop-wireframe-quiz.webp)
-
-- Results page wireframe
-
-![Success](documentation/desktop-wireframe-results.webp)
-
-- 404 page wireframe
-
-![404](documentation/desktop-wireframe-404.webp)
-
-- 500 page wireframe
-
-![500](documentation/desktop-wireframe-500.webp)
 
  </details>
 

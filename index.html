@@ -85,9 +85,18 @@
         <div id="leaderboard_screen" class="hidden view_area">
             <h2>Leaderboard</h2>
             <p>Top 10 Players</p>
-            <ul>
-                <li id="current_player">No records yet! Will you be the first in the Rankings?</li>
-            </ul>
+            <table id="ranking" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Level Reached</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Data to be added using JavaScript-->
+                </tbody>
+            </table>
             <div class="screen">
                 <button class="screen button btn btn-info" id="start3" onclick="startgame()">Start</button>
                 <button class="screen button btn btn-info" id="rules2" onclick="openRules()">Rules</button>
@@ -107,7 +116,6 @@
             <h1><strong>You ran out of lives!</strong></h1>
             <p id="end_score">Congrats you made it to Level: 0</p>
             <p>Click anywhere to continue..</p>
-
         </div>
     </main>
 
