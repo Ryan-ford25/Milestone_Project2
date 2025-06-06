@@ -201,11 +201,8 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 |                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
+| ![Home](assets/documentation/mobile_home_screen.PNG) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
 
-|                   Difficulty page wireframe                   |
-| :-----------------------------------------------------------: |
-| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
 
 
 </details>
@@ -221,9 +218,6 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
 | ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
 
-|                   Difficulty page wireframe                   |
-| :-----------------------------------------------------------: |
-| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
 
  </details>
 
@@ -234,13 +228,37 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Desktop Wireframes </summary>
 
-|                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
-| :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Home](documentation/mobile-wireframe-info.webp) | ![Rules](documentation/mobile-wireframe-rules.webp) | ![Leaderboard](documentation/mobile-wireframe-leaderboard.webp) |
+- Home page wireframe
 
-|                   Difficulty page wireframe                   |
-| :-----------------------------------------------------------: |
-| ![Difficulty](documentation/mobile-wireframe-difficulty.webp) | 
+![Home](documentation/desktop-wireframe-info.webp)
+
+- Rules page wireframe
+
+![Rules](documentation/desktop-wireframe-rules.webp)
+
+- Leaderboard page wireframe
+
+![Leaderboard](documentation/desktop-wireframe-leaderboard.webp)
+
+- Difficulty page wireframe
+
+![Difficulty](documentation/desktop-wireframe-difficulty.webp)
+
+- Quiz page wireframe
+
+![Quiz](documentation/desktop-wireframe-quiz.webp)
+
+- Results page wireframe
+
+![Success](documentation/desktop-wireframe-results.webp)
+
+- 404 page wireframe
+
+![404](documentation/desktop-wireframe-404.webp)
+
+- 500 page wireframe
+
+![500](documentation/desktop-wireframe-500.webp)
 
  </details>
 
