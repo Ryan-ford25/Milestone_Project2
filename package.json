@@ -1,0 +1,25 @@
+{
+  "name": "milestone_project2",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan-ford25/Milestone_Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryan-ford25/Milestone_Project2/issues"
+  },
+  "homepage": "https://github.com/Ryan-ford25/Milestone_Project2#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0"
+  }
+}
