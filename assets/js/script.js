@@ -34,6 +34,7 @@ function openRules(){
     });
 }
 
+//openLeaderBoardFunction displays the leaderboard screen by removing the class 'hiddem'
 function openLeaderboard(){
     $("#leaderboard_screen").removeClass("hidden");
     $("#welcome_screen").addClass("hidden");
@@ -76,11 +77,11 @@ function newGame(){
                     lightUp(move);                                            //runs the lightUp function with the value move
                     game.playerMoves.push(move);                              //Adds the 'move' to the player moves variable
                     playerTurn();                                             //Runs the players move function
-                };
+                }
             });
             gridSquare.setAttribute("data-listener", "true");                 //Sets the squares data listener to true
-        };
-    };
+        }
+    }
     showLives();
     showScore();                                                              //Runs the corresponding function.
     addTurn();
@@ -96,12 +97,12 @@ function addTurn(){
 
 //ShowScore function takes the value of variable score and displays it with the message 'Score: '
 function showScore(){
-    document.getElementById("score").innerText = `Score: ${game.score}`
+    document.getElementById("score").innerText = `Score: ${game.score}`;
 }
 
 //ShowLives function takes the value of the variable lives and displays it with the message 'Lives: '
 function showLives(){ //Displays the players lives
-    document.getElementById("lives").innerText = `Lives: ${game.lives}`
+    document.getElementById("lives").innerText = `Lives: ${game.lives}`;
 }
 
 //Adds the class 'lit' from the css file to the chosen square in order to "light" the square up (changes opacity)
@@ -118,7 +119,7 @@ function showTurns(){
     game.turnNumber = 0;                                         //Sets the turnNumber variable to 0
     if (game.turnInterval !== null){                            //If statement resets any current turnIntervals in order to prevent overlapping(doing this fixed an error with the sequence being played too fast after selecting start from the end screen)
         clearInterval(game.turnInterval);                               
-    };
+    }
     game.turnInterval = setInterval(() => {                     //Sets a new interval to display the sequence with
         lightUp(game.currentGame[game.turnNumber]);
         game.turnNumber++;                                       //increases the value of the variable turnNumber by 1 to add a square to the current sequence
@@ -126,7 +127,7 @@ function showTurns(){
             clearInterval(game.turnInterval);                   
             game.turnInterval = null;                           //sets the value of variable turnInterval to null
             game.turnInProgress = false;                        //sets value of turnInProgress to false to allow user input
-        };
+        }
     }, 800);
 }
 
@@ -143,7 +144,7 @@ function playerTurn(){
         }
     } else{                                                         //If the moves and length does not match then the following steps are carried out instead
         game.lives = game.lives -1;                                 //Decreases the value of the variable lives by 1
-        showLives()                                                 //Runs the showLives function(displaying the newly updated value)
+        showLives();                                                 //Runs the showLives function(displaying the newly updated value)
         if (game.lives == 0){                                       //Checks if the value of lives is equal to 0
             endGame();                                              //If it is then the endGame function is ran
         } else {
@@ -157,13 +158,13 @@ function playerTurn(){
 
 //endScore function displays the players score within the message 'You made it to level: '
 function endScore(){
-    document.getElementById("end_score").innerText = `You made it to Level: ${game.score}`
+    document.getElementById("end_score").innerText = `You made it to Level: ${game.score}`;
 }
 
 //newHighScoreFunction is used to display the 'New high score!' message when a new high score is achieved
 function newHighScore(){
     document.getElementById("high_score_message").classList.remove("hidden");                       //Removes the class 'hidden' from the element that has the id of 'high_score_message'
-    document.getElementById("high_score_message").innerText = `New High Score! Congratulations`     //Displays the message 'New High Score! Congratulations'
+    document.getElementById("high_score_message").innerText = `New High Score! Congratulations`;    //Displays the message 'New High Score! Congratulations'
     setTimeout(() => {                                                                              //Sets a timeout of 2 seconds
         document.getElementById("high_score_message").classList.add("hidden");                      //Adds the class 'hidden' to element with id 'high_score_message'
     }, 2000);
@@ -175,28 +176,28 @@ function highScore(){
     if(game.score > game.highScore){                                                    //Checks if the current game score is higher than what is stored in current game.highScore variable
         game.highScore = game.score;                                                   //If it is then the game.highScore variable will be updated
         localStorage.setItem("hScore", game.highScore);                                //Stores the score locally in the browser inside the variable 'hScore'
-        newHighScore()                                                                 //Runs the newHighScore function
+        newHighScore();                                                                 //Runs the newHighScore function
     }
-    document.getElementById("high_score").innerText = `High Score: ${game.highScore}` //Displays the current High score
+    document.getElementById("high_score").innerText = `High Score: ${game.highScore}`; //Displays the current High score
 }
 
 //leaderBoard function adds the users name and score to the leaderboard screen
 function leaderBoard(){
-    const playerName = prompt("Enter your name for the Leaderboard: ")
-    localStorage.setItem("name", playerName);
-    const finalScore = game.score;
-    const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];
-    const playerScore = {playerName, finalScore};
-    leaderScores.push(playerScore);
-    leaderScores.sort((a, b) => b.finalScore - a.finalScore);
-    leaderScores.splice(10);
-    localStorage.setItem("leaderScores", JSON.stringify(leaderScores));
-    showLeaderBoard();
+    const playerName = prompt("Enter your name for the Leaderboard: ");               //Sets a constant variable playerName as an input taken from the user with the prompt "Enter your name for the leaderboard: "
+    localStorage.setItem("name", playerName);                                        //Stores the players name in local storage
+    const finalScore = game.score;                                                    //Takes the value from the game.score variable and stores it in finalScore
+    const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];     //Stores the value from the leaderScores variable locally if it doesn't exist it'll return null, the JSON.parse converts the string to an array, it'll default to an empty array if 'null' is passed.
+    const playerScore = {playerName, finalScore};                                   //Sets the playerScore variable with two properties 'playerName' and 'finalScore'
+    leaderScores.push(playerScore);                                                 //Will push the playerScore value to leaderScores array
+    leaderScores.sort((a, b) => b.finalScore - a.finalScore);                       //Sorts the items by order of biggest to largest based on the value of the finalScore variable
+    leaderScores.splice(10);                                                        //The leaderboard will only display the top ten scores
+    localStorage.setItem("leaderScores", JSON.stringify(leaderScores));             //Converts the array back to a string
+    showLeaderBoard();                                                              //Runs the showLeaderBoard function
 }
 
 function showLeaderBoard(){
     
-    const leaderTable = document.querySelector("#ranking tbody");
+    const leaderTable = document.querySelector("#ranking tbody");                       //
     leaderTable.innerHTML = "";
     
     const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];
