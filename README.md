@@ -128,7 +128,7 @@ The primary colours for the site are:
 
 - `#E8B857` (Soft orange): Used for the text elements, as a **complimentary** color to blue it contrasts the background very well.
 
-- `#008CA3` (Dark cycan): Used only in the logo to create a shadow effect.
+- `#008CA3` (Dark cyan): Used only in the logo to create a shadow effect.
 
 This color scheme enhances clarity, feedback, and user experience while maintaining a clean and simplistic aesthetic.
 
@@ -148,7 +148,7 @@ This color scheme enhances clarity, feedback, and user experience while maintain
 
 Google Fonts was used to import the selected fonts for the site, ensuring high-quality and easily accessible typography.
 
-- The font [Orbitron]('https://fonts.google.com/specimen/Orbitron?query=orbitronp') was chosen because it offers a clean, digital, and highly readable design that enhances user experience while maintaining a 'game' like aesthetic with a retro arcade feel.
+- The font [Orbitron](https://fonts.google.com/specimen/Orbitron?query=orbitronp&preview.text=Welcome%20to%20Echoes%20of%20Light) was chosen because it offers a clean, digital, and highly readable design that enhances user experience while maintaining a 'game' like aesthetic with a retro arcade feel.
 
 <img src="assets/documentation/orbitron_preview.PNG" alt="Orbitron font preview text">
 
@@ -232,9 +232,6 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 | :-----------------------------------------------: | :-----------------------------------------------------: |
 | ![Quiz](documentation/tablet-wireframe-quiz.webp) | ![Results](documentation/tablet-wireframe-results.webp) |
 
-|               404 page wireframe                |               500 page wireframe                |
-| :---------------------------------------------: | :---------------------------------------------: |
-| ![404](documentation/tablet-wireframe-404.webp) | ![500](documentation/tablet-wireframe-500.webp) |
 
  </details>
 
