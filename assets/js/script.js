@@ -1,3 +1,7 @@
+/* global $ */
+window.openRules = openRules;
+window.openLeaderboard = openLeaderboard;
+window.startGame = startGame;
 //Game Variables
 let game = {
     score: 0,
