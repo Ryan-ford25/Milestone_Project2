@@ -196,12 +196,9 @@ function leaderBoard(){
 }
 
 function showLeaderBoard(){
-    
-    const leaderTable = document.querySelector("#ranking tbody");                       //
-    leaderTable.innerHTML = "";
-    
-    const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];
-
+    const leaderTable = document.querySelector("#ranking tbody");                       
+    leaderTable.innerHTML = "";                                                         
+    const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];       
     leaderScores.forEach((entry, index) => {
         const row = document.createElement("tr");
         row.innerHTML = `
