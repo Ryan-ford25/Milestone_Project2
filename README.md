@@ -498,33 +498,26 @@ To clone the repository:
 > [!NOTE]
 > Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
-<a id=solved-issues></a>
+<a id=credits></a>
 
-### Solved Issues & Bugs
-
-| No | Bug Description | Solution | Screenshot |
-| :- | :------------- | :-------- | :--------- |
-| 1  | When running the 'ESlint' extension in visual studio code it displayed a problem with the use of '$' as it was undefined | After searching online I found that it is because I didn't say that jQuery was being used when I ran enlist for the first time. To fix this I added /* global $ */ to the top of the javaScript file. | ![ESLint undefined error](assets/documentation/eslint_undefined_error.PNG) |
-| 2 | Another problem found by the ESLint extension were variables that were defined but never used. However the variables were being used by the index.html file in order for the buttons to work. |  I attached the functions to the global scope using 'window.startGame = startGame; which fixed the issue. | ![ESLint defined but not used error message](assets/documentation/eslint_unused_error.PNG) |
-
----
-
-<a id=credits&inspiration></a>
-
-## Credits & Inspiration
-
-
-<a id=content></a>
+## Credits 
+>
+### Code
+ * Understanding how to use 'localstorage.getItem and localStorage.setItem' was learned through ![w3schools](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+ * Another README guide was provided by the Slack community [Youtube video](https://www.youtube.com/watch?v=l1DE7L-4eKQ)
 
 ### Content
 
-All content for the site was written by myself.
+ * All content was written by the developer.
+ * [Color contrast checker](https://coolors.co/contrast-checker/112a46-acc8e5) was used to check if the color scheme chosen would work well
 
-<a id=acknowledgement></a>
+### Media 
 
-### Acknowledgments
+ * Open Ai provided the Logo
+---
 
-I would like to acknowledge the following people:
+## Acknowledgements
 
-<br><hr>
-[🔼 Back to top](#contents)
+ * My mentor Mitko Bachvarov provided helpful feedback and a README to look at as a guide.
+ * Slack community for encouragement and information.
+ * My teacher Thomas Cowen provided me with help along the way and recommended slack channels that would help with the writing of the README file.

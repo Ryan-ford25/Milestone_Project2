@@ -49,9 +49,10 @@ li{
 /**Logo**/
 #logo{
     display: flex;
-    justify-self: center;
+    margin: auto;
     max-height: 300px;
-    max-width: 300px;
+    padding: 10px;
+    justify-content: center;
 }
 /**Game Screen**/
 .grid_square{
@@ -105,7 +106,7 @@ li{
         font-size : 100%;
     }
 
-    grid_square{
+    .grid_square{
         width: 28vw;
         height: 28vw;
     }
