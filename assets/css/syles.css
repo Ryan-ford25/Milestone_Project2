@@ -49,10 +49,9 @@ li{
 /**Logo**/
 #logo{
     display: flex;
-    margin: auto;
+    justify-self: center;
     max-height: 300px;
-    padding: 10px;
-    justify-content: center;
+    max-width: 300px;
 }
 /**Game Screen**/
 .grid_square{
