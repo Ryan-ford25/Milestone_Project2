@@ -12,6 +12,10 @@ body{
 }
 
 header{
+    display: flex;
+    justify-self: center;
+    max-height: 300px;
+    max-width: 300px;
     text-align: center;
 }
 
