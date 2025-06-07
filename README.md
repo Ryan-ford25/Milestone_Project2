@@ -2,7 +2,7 @@
 
 ---
 
-![[Echoes of Light memory game displayed on different devices]](assets/documentation/am_i_responsive.png)
+![[Echoes of Light memory game displayed on different devices]](assets/documentation/am_i_responsive_home.PNG)
 
 Visit the deployed site here: [Echoes of Light](https://ryan-ford25.github.io/Milestone_Project2/)
 
@@ -329,7 +329,7 @@ The homepage effectively sets the stage for whats to come. It provides an engagi
 <details>
 <summary> Click here to view the leaderboard page </summary>
 
-![Echoes of Light leaderboard screen shown on multiple screen sizes](documentation/features-responsive-leaderboard.webp)
+![Echoes of Light leaderboard screen shown on multiple screen sizes](assets/documentation/am_i_responsive_leaderboard.PNG)
 
 </details>
 
@@ -402,13 +402,9 @@ The homepage effectively sets the stage for whats to come. It provides an engagi
 
 To ensure the website remains engaging and functional for users, in future implementations I would like to:
 
-1. **Night & Day Mode (Manual & System-Integrated)** – Introduce a toggle feature that allows users to manually switch between light and dark mode, while also offering an auto mode that adapts based on the user’s system settings. This ensures a comfortable viewing experience in any environment, reduces eye strain, and enhances accessibility for users who prefer high-contrast or low-light displays.
-2. **Lifelines / Power-Ups** – Add options like “50/50” (removes two incorrect answers), “Extra Time” (adds 5 seconds), or “Skip Question” for a more strategic experience.
-3. **Additional Question Categories** – Allow users to choose different music genres (e.g., Pop, Rock, Hip-Hop, 80s Hits) instead of a single general quiz.
-4. **Personalized Music Recommendations** – Based on quiz performance, suggest songs or playlists (e.g., “You scored high on Rock – check out this playlist!”).
-5. **Badges & Achievements** – Reward users with unlockable badges (e.g., “Pop Quiz Champion,” “Rock Guru”) for reaching milestones.
-6. **Shareable Results & Social Media Integration** – Let users share their scores on Twitter, Instagram, or Facebook.
-7. **Live Leaderboard** – Introduce a live leaderboard (rather than a locally stored version) to keep competition fresh and exciting. Allowing users to compete against each other.
+1. **Live Leaderboard** – Introduce a live leaderboard (rather than a locally stored version) to keep competition fresh and exciting. Allowing users to compete against each other.
+2. **Add Difficulty levels** - Add an option to choose difficulty levels such as a 4x4 grid as oppose to the current 3x3 or choosing the sequence display speed, adding another level of competition and challenge for users.
+3. **Colourblind options** - Give users different colourblind option to change the colours of the squares creating a more accessible game.
 
 ---
 
@@ -428,9 +424,9 @@ HTML, CSS, JavaScript
 
 - [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
-- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) - Used to design the logo and create visuals.
+- [LucidCharts](https://www.lucidchart.com/) - Used to create the flow diagrams.
 
-- [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Used to crop, resize, edit and save images to webp format.
+- [OpenAI](https://openai.com/) - Used to create the logo for the page.
 
 - [Git](https://git-scm.com/) - For version control.
 
@@ -438,21 +434,13 @@ HTML, CSS, JavaScript
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor used to create the site.
 
-- [Mobile First Plugin](https://www.webmobilefirst.com/en/) - Chrome plug-in used to test responsiveness of the site on different devices.
-
-- [Responsinator](http://www.responsinator.com/) - To show the website UI on a range of devices.
-
-- [Am I Responsive?](http://ami.responsivedesign.is/) - Another site to show the website UI on a range of devices.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - The site was used to show my pages responsiveness on multiple screen sizes.
 
 - [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-- [Font Awesome](https://fontawesome.com/) - Icon library toolkit for social media icons.
-
 - [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-- [Aria DevTools](https://github.com/ziolko/aria-devtools) - Used to view the website the way screen readers present it to visually impaired users.
-
-- [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+- [Bootstrap](https://getbootstrap.com/) - To apply styling to buttons without having to worry about doing all the css myself allowing me to focus on the JavaScript.
 
 ---
 
@@ -464,12 +452,12 @@ HTML, CSS, JavaScript
 
 ### Deployment
 
-The site is deployed using GitHub Pages - [Dj Silver Soul's Pop Quiz](https://sd-powell.github.io/portfolio_project_2/).
+The site is deployed using GitHub Pages - [Echoes of Light](https://ryan-ford25.github.io/Milestone_Project2/).
 
 To Deploy the site using GitHub Pages:
 
 1. Login (or sign up) to Github.
-2. Go to the repository for this project, [sd-powell/portfolio_project_2](https://github.com/sd-powell/portfolio_project_2).
+2. Go to the repository for this project, [ryan-ford25/Milestone_Project2](https://github.com/Ryan-ford25/Milestone_Project2).
 3. Click the settings button.
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
@@ -486,7 +474,7 @@ To Deploy the site using GitHub Pages:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [sd-powell/portfolio_project_2](https://github.com/sd-powell/portfolio_project_2).
+2. Go to the repository for this project, [ryan-ford25/Milestone_Project2](https://github.com/Ryan-ford25/Milestone_Project2).
 3. Click the Fork button in the top right corner.
 
 <a id=clone></a>
@@ -496,7 +484,7 @@ To fork the repository:
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, [sd-powell/portfolio_project_2](https://github.com/sd-powell/portfolio_project_2).
+2. Go to the repository for this project, [ryan-ford25/Milestone_Project2](https://github.com/Ryan-ford25/Milestone_Project2).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -516,23 +504,8 @@ To clone the repository:
 
 | No | Bug Description | Solution | Screenshot |
 | :- | :------------- | :-------- | :--------- |
-| 1  | When testing the HTML code with the W3C validator, it flagged an issue with trailing slashes (e.g., `<br />`). This was caused by the formatter in VS Code. | I disabled "Format on Save" in VS Code to resolve the issue and re-tested my HTML code. | ![Screenshot](documentation/testing-fix-slash.webp) |
-| 2 | Initially, I was unable to correctly highlight selected answers using the API data for each question. I wanted to assign correct and incorrect values to the buttons so they could be visually indicated to the user with a tick or a cross. | I implemented a function to parse the API data and dynamically assign a custom `data-correct="true"` attribute to the correct answer button. This ensured that both correct and incorrect answers could be properly styled after a button was selected. | ![Screenshot](documentation/testing-fix-tick.webp) |
-| 3  | When a user leaves the name field blank or enters only spaces before submitting, Chrome displays its default alert: `"Please enter your name before submitting!"`. My mentor suggested replacing this with a JavaScript alert using [SweetAlert2](https://sweetalert2.github.io/). | I installed the SweetAlert2 CDN link and implemented a custom alert modal. | ![Screenshot](documentation/testing-fix-modal.webp) |
-| 4  | When testing the site on small screens (320px wide), part of the main panel was cropped by the viewport. | I added a media query `@media screen and (max-width: 320px) and (max-height: 568px)`, which removed the background image and repositioned the panel at the top of the screen. | ![Screenshot](documentation/testing-fix-320px.webp) |
-| 5  | In my first project, I realised that I didn't implement ARIA labels for my background images. | I researched how to add ARIA labels to the `<header>` element, ensuring they appeared correctly in the ARIA testing tool I used. | ![Screenshot](documentation/testing-fix-aria.webp) |
-| 6 | Whilst testing the site using [Aria DevTools](https://github.com/ziolko/aria-devtools), I noticed that the home panel (`info_panel`) remained visible to screen readers, even though it was hidden in the UI when other panels were displayed. Additionally, when manually resizing the site to test responsiveness, the ease effect caused brief glimpses of the home panel beneath other elements. | I researched the best way to fully hide content from screen readers and found that `visibility: hidden;` was the most effective approach. I added this rule to the CSS and created a JavaScript function to add and remove the `.hidden` class, ensuring that the `info_panel` is properly hidden both visually and from assistive technologies when other panels are displayed. | ![Screenshot](documentation/testing-fix-hidden.webp) |
-| 7 | On screens smaller than 368px, the tick and cross icons on the answer buttons were positioned too close to the border. | I added a rule to the 368px media query to adjust their positioning to 40px from the right. | ![Screenshot](documentation/testing-fix-tick.webp) |
-
----
-
-<a id=known-issues></a>
-
-### Known Issues & Bugs
-
-| No | Bug Description | Screenshot |
-| :- | :------------- | :--------- |
-| 1 |	I have noticed that when the keyboard appears on mobile devices while a user is submitting their name in the form field, the panel is nudged up the screen, slightly obscuring the header background image. A tutor advised me that this shouldn’t be a concern. | ![Screenshot](documentation/testing-bugs-keyboard.webp) |
+| 1  | When running the 'ESlint' extension in visual studio code it displayed a problem with the use of '$' as it was undefined | After searching online I found that it is because I didn't say that jQuery was being used when I ran enlist for the first time. To fix this I added /* global $ */ to the top of the javaScript file. | ![ESLint undefined error](assets/documentation/eslint_undefined_error.PNG) |
+| 2 | Another problem found by the ESLint extension were variables that were defined but never used. However the variables were being used by the index.html file in order for the buttons to work. |  I attached the functions to the global scope using 'window.startGame = startGame; which fixed the issue. | ![ESLint defined but not used error message](assets/documentation/eslint_unused_error.PNG) |
 
 ---
 
@@ -540,30 +513,12 @@ To clone the repository:
 
 ## Credits & Inspiration
 
-- This [YouTube tutorial](https://www.youtube.com/watch?v=xZXW5SnCiWI&t=2918s) was incredibly helpful in shaping the key features of my quiz. It provided valuable insights into concepts like hiding and displaying panels, implementing a timer, and showing correct and incorrect answers after a response. These elements not only enhanced my understanding but also gave me the confidence to develop my own features.
-
-- I wanted a simple way to save high scores without using a database, and local storage seemed like a feasible option. After extensive research and referencing the following tutorials, I successfully implemented a function for my site.
-  - This [YouTube tutorial](https://youtu.be/DFhmNLKwwGw?si=_Ccj6qyp0WI2XPuf) taught me how to save the name and score as an object, store it in an array within local storage, and sort the array in descending order based on the score.
-
-- Additionally, I watched [This YouTube tutorial](https://www.youtube.com/watch?v=UY6AeR_M_dU) to learn how to use the [Open Trivia API](https://opentdb.com/) in my project.
-
-- I drew inspiration from [MyFitnessPal](https://www.myfitnesspal.com/) for the site’s color scheme and interface design.
-
-- This post on [Stack Overflow](https://stackoverflow.com/questions/24127507/is-it-possible-to-center-tables-in-a-markdown-file) helped me to understand markdown tables and positioning.
 
 <a id=content></a>
 
 ### Content
 
-Every question on my site was sourced via the API from [The Open Trivia Database](https://opentdb.com/).
-
-All other content for the site is written by myself.
-
-<a id=media></a>
-
-### Media
-
-- [Adobe Stock](https://stock.adobe.com/) - Used to source royalty free imagery for the site.
+All content for the site was written by myself.
 
 <a id=acknowledgement></a>
 
