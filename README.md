@@ -257,7 +257,9 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 <a id=features></a>
 
-The website consists of a home page featuring a series of different screen panels that are dynamically shown or hidden, controlled by buttons and page interaction.
+### Features
+
+The website consists of a home page featuring a series of different screen panels that are dynamically shown or hidden, controlled by button interactions.
 
 All Pages on the website are responsive and have:
 
@@ -498,12 +500,27 @@ To clone the repository:
 > [!NOTE]
 > Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
+<a id=solved-issues></a>
+
+### Solved Issues & Bugs
+
+| No | Bug Description | Solution | Screenshot |
+| :- | :------------- | :-------- | :--------- |
+| 1  | When playing another game after the end screen or pressing start from the rules screen the game would display the sequence faster each time. This was due to the interval timings overlapping eachother. | I created a variable 'turnInterval' and set its default to 'null' in order to clear all intervals at the start of a game aswell as after each move. | ![Screenshot](assets/documentation/interval_screenshot.PNG) |
+| 2 | Initially, I was unable to correctly highlight selected answers using the API data for each question. I wanted to assign correct and incorrect values to the buttons so they could be visually indicated to the user with a tick or a cross. | I implemented a function to parse the API data and dynamically assign a custom `data-correct="true"` attribute to the correct answer button. This ensured that both correct and incorrect answers could be properly styled after a button was selected. | ![Screenshot](documentation/testing-fix-tick.webp) |
+| 3  | When a user leaves the name field blank or enters only spaces before submitting, Chrome displays its default alert: `"Please enter your name before submitting!"`. My mentor suggested replacing this with a JavaScript alert using [SweetAlert2](https://sweetalert2.github.io/). | I installed the SweetAlert2 CDN link and implemented a custom alert modal. | ![Screenshot](documentation/testing-fix-modal.webp) |
+| 4  | When testing the site on small screens (320px wide), part of the main panel was cropped by the viewport. | I added a media query `@media screen and (max-width: 320px) and (max-height: 568px)`, which removed the background image and repositioned the panel at the top of the screen. | ![Screenshot](documentation/testing-fix-320px.webp) |
+| 5  | In my first project, I realised that I didn't implement ARIA labels for my background images. | I researched how to add ARIA labels to the `<header>` element, ensuring they appeared correctly in the ARIA testing tool I used. | ![Screenshot](documentation/testing-fix-aria.webp) |
+| 6 | Whilst testing the site using [Aria DevTools](https://github.com/ziolko/aria-devtools), I noticed that the home panel (`info_panel`) remained visible to screen readers, even though it was hidden in the UI when other panels were displayed. Additionally, when manually resizing the site to test responsiveness, the ease effect caused brief glimpses of the home panel beneath other elements. | I researched the best way to fully hide content from screen readers and found that `visibility: hidden;` was the most effective approach. I added this rule to the CSS and created a JavaScript function to add and remove the `.hidden` class, ensuring that the `info_panel` is properly hidden both visually and from assistive technologies when other panels are displayed. | ![Screenshot](documentation/testing-fix-hidden.webp) |
+| 7 | On screens smaller than 368px, the tick and cross icons on the answer buttons were positioned too close to the border. | I added a rule to the 368px media query to adjust their positioning to 40px from the right. | ![Screenshot](documentation/testing-fix-tick.webp) |
+
+
 <a id=credits></a>
 
 ## Credits 
 >
 ### Code
- * Understanding how to use 'localstorage.getItem and localStorage.setItem' was learned through ![w3schools](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+ * Understanding how to use 'localstorage.getItem and localStorage.setItem' was learned through [w3schools](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
  * Another README guide was provided by the Slack community [Youtube video](https://www.youtube.com/watch?v=l1DE7L-4eKQ)
 
 ### Content

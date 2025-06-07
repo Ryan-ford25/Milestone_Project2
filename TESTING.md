@@ -84,6 +84,7 @@ I attempted to test with [Jest](https://jestjs.io/) but I encountered complicati
 | ESLint  | When running the 'ESlint' extension in visual studio code it displayed a problem with the use of '$' as it was undefined | After searching online I found that it is because I didn't say that jQuery was being used when I ran enlist for the first time. To fix this I added /* global $ */ to the top of the javaScript file. | ![ESLint undefined error](assets/documentation/eslint_undefined_error.PNG) |
 | ESLint | Another problem found by the ESLint extension were variables that were defined but never used. However the variables were being used by the index.html file in order for the buttons to work. |  I attached the functions to the global scope using 'window.startGame = startGame; which fixed the issue. | ![ESLint defined but not used error message](assets/documentation/eslint_unused_error.PNG) | 
 | JSHint | The Jshint tool displayed the warning "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (game, lightUp, playerTurn) | After doing some research I found that this wasn't a pressing issue as the code has been functioning as it should through all other test, but it could be solved by extracting the function out of the loop. | ![Jshint error screenshot](assets/documentation/jshint_warning_message.PNG) |
+| JSHint | Had multiple warnings listed as "'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." This is JSHint warning you that the 'let' functions are only supported in ESversion: 6 but was running an older version at the time of using the tool | To fix this error I ammended the configuration to use new JavaSript features using the configuration setting. | ![JSHint version error screenshot](assets/documentation/jshint_version_error.PNG) |
 
 ---
 
@@ -95,10 +96,7 @@ I've tested my deployed project using the Lighthouse Audit tool to test the perf
 
 | Page | Mobile | Desktop | Notes |
 | :--: | :--: | :--: | :--: |
-| Home | ![screenshot](documentation/testing-lighthouse-mobile-index.webp) | ![screenshot](documentation/testing-lighthouse-desktop-index.webp) | ✅ Passed with great results |
-| 404 | ![screenshot](documentation/testing-lighthouse-mobile-404.webp) | ![screenshot](documentation/testing-lighthouse-desktop-404.webp) | ✅ Passed with great results |
-| 500 | ![screenshot](documentation/testing-lighthouse-mobile-500.webp) | ![screenshot](documentation/testing-lighthouse-desktop-500.webp) | ✅ Passed with great results |
-
+| Home | ![screenshot](assets/documentation/mobile_lighthouse_report.PNG) | ![screenshot](assets/documentation/desktop_lighthouse_report.PNG) | Both tests passed and came back with excellent results |
 ---
 
 <a id=manual-testing></a>
