@@ -16,6 +16,7 @@ header{
     justify-content: center;
     max-height: 300px;
     max-width: 300px;
+    margin: auto;
     text-align: center;
 }
 
@@ -56,6 +57,7 @@ li{
 
 /**Logo**/
 #logo{
+    justify-self: center;
     max-height: 300px;
     max-width: 300px;
 }
