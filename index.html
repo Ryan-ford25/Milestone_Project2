@@ -85,15 +85,15 @@
         <div id="leaderboard_screen" class="hidden view_area">
             <h2>Leaderboard</h2>
             <p>Top 10 Players</p>
-            <table id="ranking" class="table">
-                <thead>
+            <table id="ranking" class="table view_area2">
+                <thead class="view_area">
                     <tr>
                         <th scope="col">Rank</th>
                         <th scope="col">Name</th>
                         <th scope="col">Level Reached</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="view_area">
                     <!--Data to be added using JavaScript-->
                 </tbody>
             </table>
@@ -115,7 +115,7 @@
         <div id="end_screen" class="hidden view_area">
             <h1><strong>You ran out of lives!</strong></h1>
             <p id="end_score">Congrats you made it to Level: 0</p>
-            <form >
+            <form class="view_area2">
                 <div class="mb-3">
                     <label for="name" class="form-label">Enter your name for the Leaderboard:</label>
                     <input type="text" class="form-control" id="name" aria-describedby="nameHelp">

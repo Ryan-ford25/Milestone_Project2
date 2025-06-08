@@ -55,12 +55,15 @@ li{
     opacity: 0.4;
 }
 
+
 /**Logo**/
 #logo{
     justify-self: center;
     max-height: 300px;
     max-width: 300px;
 }
+
+
 /**Game Screen**/
 .grid_square{
     width: 33vw;
@@ -104,6 +107,18 @@ li{
 .sq9{
     background-color: #2a1142;
 }
+
+/*Leaderboard screen*/
+.view_area2{
+    margin: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    width: 450px;
+}
+
+/*End Screen*/
+
 
 /**Media Queries**/
 
