@@ -138,4 +138,12 @@ li{
         align-items: center;
         gap: 5px;
     }
+
+    .view_area2{
+        width: 28vw;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
 }
