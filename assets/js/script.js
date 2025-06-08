@@ -19,6 +19,8 @@ let game = {
     turnInterval: null,
 };
 
+let clickCooldown = false;  //variable used in order to create a cooldown between clicks to prevent double clicking and rapid clicking.
+
 //When the rule button is clicked the class 'hidden' will be added to the welcome screen and removed from rules screen so that the rules can be displayed.
 function openRules(){
     $("#rules_screen").removeClass("hidden");
@@ -62,30 +64,32 @@ function startGame(){
 
 //Starts a new game resetting all game variables to their default values
 function newGame(){
-    const savedScore = localStorage.getItem("hScore");
+    const savedScore = localStorage.getItem("hScore");                                              //stores the locally saved value for the variable 'hScore' in savedScore so it can be displayed as the high score
     if (savedScore !== null){
         game.highScore = parseInt(savedScore);
     }
-    game.lives = 3;
-    game.score = 0;
-    game.playerMoves = [];
-    game.currentGame= [];
+    game.lives = 3;                                                                                     //Sets lives to 3 at the start of every game
+    game.score = 0;                                                                                     //Sets score to 0 at the start of every game
+    game.playerMoves = [];                                                                              //Empties the playerMoves array
+    game.currentGame= [];                                                                               //Empties the currentGame array
     for (let gridSquare of document.getElementsByClassName("grid_square")) {
-        if (gridSquare.getAttribute("data-listener") !== "true"){             //Checks if it has a data listener of false
-            gridSquare.addEventListener("click", (e) => {                     //Adds a click event listener to the square
-                if(game.currentGame.length > 0 && !game.turnInProgress) {     //Checks if the length is more than 0 and if input is set to true
-                    let move = e.target.getAttribute("id");                   //Gets the id of the clicked square then stores it in the variable move
-                    game.lastButton = move;                                   //Stores the move within the last button variable 
-                    lightUp(move);                                            //runs the lightUp function with the value move
-                    game.playerMoves.push(move);                              //Adds the 'move' to the player moves variable
-                    playerTurn();                                             //Runs the players move function
+        if (gridSquare.getAttribute("data-listener") !== "true"){                                       //Checks if it has a data listener of false
+            gridSquare.addEventListener("click", (e) => {                                               //Adds a click event listener to the square
+                if (game.currentGame.length > 0 && !game.turnInProgress && !clickCooldown){             //checks if currentGame.length is greater than 0, if turning in progress is not false and if the clickCooldown is not false
+                    clickCooldown=true;                                                                 //Sets clickCooldown to true
+                    setTimeout(() => clickCooldown = false, 250);                                       //Sets it back to false after 400 milliseconds, this prevents user input for the allotted time after a square has been clicked
+                    let move = e.target.getAttribute("id");                                             //Gets the id of the clicked square then stores it in the variable move
+                    game.lastButton = move;                                                             //Stores the move within the last button variable 
+                    lightUp(move);                                                                      //runs the lightUp function with the value move
+                    game.playerMoves.push(move);                                                        //Adds the 'move' to the player moves variable
+                    playerTurn();                                                                       //Runs the players move function
                 }
             });
-            gridSquare.setAttribute("data-listener", "true");                 //Sets the squares data listener to true
+            gridSquare.setAttribute("data-listener", "true");                                           //Sets the squares data listener to true
         }
     }
     showLives();
-    showScore();                                                              //Runs the corresponding function.
+    showScore();                                                                                        //Runs the corresponding function.
     addTurn();
     highScore();
 }
@@ -205,7 +209,10 @@ function highScore(){
 
 //leaderBoard function adds the users name and score to the leaderboard screen
 function leaderBoard(){
-    const playerName = document.getElementById("name").value;               //Sets a constant variable playerName as an input taken from the user with the prompt "Enter your name for the leaderboard: "
+    let playerName = document.getElementById("name").value;               //Sets a constant variable playerName as an input taken from the user with the prompt "Enter your name for the leaderboard: "
+    if (playerName == ""){
+        playerName = "Anonymous"
+    }
     localStorage.setItem("name", playerName);                                        //Stores the players name in local storage
     const finalScore = game.score;                                                    //Takes the value from the game.score variable and stores it in finalScore
     const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];     //Stores the value from the leaderScores variable locally if it doesn't exist it'll return null, the JSON.parse converts the string to an array, it'll default to an empty array if 'null' is passed.

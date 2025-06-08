@@ -503,8 +503,9 @@ To clone the repository:
 
 | No | Bug Description | Solution | Screenshot |
 | :- | :------------- | :-------- | :--------- |
-| 1  | When playing another game after the end screen or pressing start from the rules screen the game would display the sequence faster each time. This was due to the interval timings overlapping eachother. | I created a variable 'turnInterval' and set its default to 'null' in order to clear all intervals at the start of a game aswell as after each move. | ![Screenshot](assets/documentation/interval_screenshot.PNG) |
-| 2 |  I noticed that on safari and firefox the webpage logo wasn't loading in the center. | To fix this I adjusted the CSS on the logo to 'justify-self: center;' and added CSS styling to the header element making it's display: flex and changing the margins. | ![Screenshot](assets/documentation/mac_safari.PNG) |
+| 1  | When playing another game after the end screen or pressing start from the rules screen the game would display the sequence faster each time. This was due to the interval timings overlapping eachother. | I created a variable 'turnInterval' and set its default to 'null' in order to clear all intervals at the start of a game aswell as after each move. | <img src="assets/documentation/interval_screenshot.PNG" alt="Interval code screenshot" width="500"> |
+| 2 |  I noticed that on safari and firefox the webpage logo wasn't loading in the center. | To fix this I adjusted the CSS on the logo to 'justify-self: center;' and added CSS styling to the header element making it's display: flex and changing the margins. |<img src="assets/documentation/mac_safari.PNG" alt="Safari CSS error screenshot" width="500"> |
+| 3 | The Game allowed double/rapid clicking which meant that lives could be lost rapidly if the user clicked multiple squares | To solve this I added a click cooldown so that the user would have to wait for a short period before being able to select the next square. This solution also meant that the users sequence length wouldn't be larger than the games sequence length | <img src="assets/documentation/click_cooldown.PNG" alt="Click cooldown code screenshot" width="750"> |
 
 <a id=credits></a>
 
