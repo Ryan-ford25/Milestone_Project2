@@ -331,7 +331,8 @@ The **game page** provides an interactive interface for uses to see and relay th
   - The layout is structured for easy readability and user engagement.    
 
 - **Responsiveness & Accessibility:**  
-  - The game adapts correctly between mobile and larger screens.(desktop, tablet, mobile).  
+  - The game adapts correctly between mobile and larger screens.(desktop, tablet, mobile). 
+  - It is clear to the user when it is there turn.
 
 - **Performance & Functionality:**  
   - The game displays the sequences with the correct delay without any broken elements.
@@ -365,19 +366,18 @@ The **End page** provides users with a clear message to explain that the game ha
 
 - **Branding & Design:**  
   - The page maintains a consistent visual style with the rest of the site.  
-  - The sequence is clearly displayed to the user.
-  - It is clear to the user when the wrong sequence has been entered.
   - The layout is structured to ensure easy readability and interaction.  
 
 - **Responsiveness & Accessibility:**  
-  - The End page adapts well to different **screen sizes** (desktop, tablet, mobile).  
-  - The **form elements (`<input>`, `<button>`)** are accessible via keyboard navigation and screen readers.  
-  - The use of **semantic HTML elements** (`<h2>`, `<p>`, `<form>`, `<input>`, `<button>`) enhances accessibility.  
+  - The End page adapts well to different screen sizes from small mobiles to larg desktops..  
+  - The form elements (`<input>`, `<button>`)** are accessible via keyboard navigation and screen readers.  
+  - The use of semantic HTML elements (`<h1>`, `<p>`, `<form>`, `<input>`, `<button>`) enhances accessibility.  
 
 - **Performance & Functionality:**  
-  - The **score updates dynamically** upon game completion.  
-  - The **submission form works correctly**, preventing invalid inputs and successfully adding scores to the leaderboard.  
-  - The page loads **efficiently** without broken elements or layout shifts.  
+  - The score updates dynamically upon inputting the correct sequence.
+  - The lives are updated properly when the input is incorrect.  
+  - The submission form works correctly, successfully adding scores to the leaderboard.  
+  - The page loads efficiently without broken elements or layout shifts.  
 
 <details>
 <summary>Click here to see the End page</summary>
@@ -391,38 +391,36 @@ The **End page** provides users with a clear message to explain that the game ha
 ### Leaderboard page
 
 #### Overview
-The **Leaderboard page** provides users with a ranked list of the top 10 scores, dynamically updating based on game performance. It enhances user engagement by displaying competitive scores and offering options to restart or exit the game.
+The Leaderboard page provides users with a ranked list of the top 10 scores, dynamically updating based on game performance. It enhances user engagement by displaying competitive scores and offering options to start the game or view the rules.
 
 #### Features Tested:
 - **Leaderboard Display & Dynamic Updates:**  
-  - The **top 10 scores** are displayed in a structured table format.  
+  - The top 10 scores are displayed in a structured table format.  
   - The `<tbody>` section dynamically updates with user scores after game completion.  
-  - **Ranks, names, and scores** are correctly displayed in descending order.  
+  - Ranks, names, and scores are correctly displayed in descending order.  
 
-- **Navigation & Call to Action:**  
-  - The **"Exit" button** allows users to return to the home page.  
-  - The **"Restart game" button** lets users immediately begin a new game session.  
-  - **ARIA labels** are applied to buttons for improved accessibility.  
+- **Navigation & Call to Action:**    
+  - The "Start" button lets users immediately begin a new game session.  
+  - ARIA labels are applied to buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The page maintains the **consistent styling** of the site.  
-  - Uses **clear, readable fonts** and a structured table format for clarity.  
-  - Buttons follow the **expected UI conventions** (`outline_btn` for exit, `reverse_btn` for restart).  
+  - The page maintains the consistent styling of the site.  
+  - Uses clear, readable fonts and a structured table format for clarity.    
 
 - **Responsiveness & Accessibility:**  
-  - The leaderboard layout adapts to different **screen sizes** (desktop, tablet, mobile).  
-  - Uses **semantic HTML elements** (`<table>`, `<th>`, `<tbody>`) to ensure proper screen reader support.  
-  - Button labels and interactive elements comply with **ARIA accessibility guidelines**.  
+  - The leaderboard layout adapts to different screen sizes from mobiles to desktops.  
+  - Uses semantic HTML elements (`<table>`, `<th>`, `<tbody>`) to ensure proper screen reader support.  
+  - Button labels and interactive elements comply with ARIA accessibility guidelines.  
 
 - **Performance & Functionality:**  
-  - The leaderboard updates **instantly** after the game is completed.  
-  - The **Exit and Restart buttons** work as expected, redirecting users appropriately.  
-  - The page loads **without delays or broken styling**, ensuring a smooth user experience.  
+  - The leaderboard updates instantly after the game is completed.  
+  - The "Start" and "Rules" buttons work as expected, redirecting users to the appropriate screen.  
+  - The page loads without delays or broken styling, ensuring a smooth user experience.  
 
 <details>
 <summary>Click here to see the Leaderboard page</summary>
 
-![Leaderboard page](documentation/testing-features-leaderboard.webp)
+![Leaderboard page](assets/documentation/am_i_responsive_leaderboard.PNG)
 
 </details>
 <br>
@@ -436,11 +434,9 @@ The **Leaderboard page** provides users with a ranked list of the top 10 scores,
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Rules** button | The **rules** page should open, displaying instructions on how to play the game | Clicked on the **rules** button | The **rules** page opened and displayed the instructions correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-rules.gif) |
-| **Leaderboard** button | The **leaderboard** page should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** page opened and displayed the top 10 scores correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-leaderboard.gif) |
-| **Start** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Start** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-home-start.gif) |
-| **Rules** and **Leaderboard** buttons - hover effect | When hovered over, the **Rules** and **Leaderboard** buttons should change to a white background with light blue text | Hovered over the **Rules** and **Leaderboard** buttons | The **Rules** and **Leaderboard** buttons changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-home-rules.webp) ![screenshot](documentation/testing-home-ruleshover.webp) ![screenshot](documentation/testing-home-leaderboard.webp) ![screenshot](documentation/testing-home-leaderboardhover.webp) |
-| **Start** button - hover effect | When hovered over, the **Start** button should change from dark blue text to white text | Hovered over the **Start** button | The **Start** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-home-start.webp) ![screenshot](documentation/testing-home-starthover.webp) |
+| **Rules** button | The **rules** page should open, displaying instructions on how to play the game | Clicked on the **rules** button | The **rules** page opened and displayed the instructions correctly | No fix required | <img src="assets/documentation/home_to_rules.gif" alt="home to rules gif" width="500"> |
+| **Leaderboard** button | The **leaderboard** page should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** page opened and displayed the top 10 scores correctly | No fix required | ![screenshot](documentation/testing-home-leaderboard.gif) |
+| **Start** button | The game page should open and begin with the first sequence | Clicked on the **Start** button | The game page opened and the first sequence was shown | No fix required | ![screenshot](documentation/testing-home-start.gif) |
 
 ---
 
