@@ -357,14 +357,11 @@ The **End page** provides users with a clear message to explain that the game ha
   - The page correctly displays the user’s final score with `document.getElementById("end_score").innerText = You made it to Level: ${game.score}`;.
 
 - **Leaderboard Submission Functionality:**  
-  - The **name input field (`#user_name`)** allows users to enter a name (up to 20 characters).  
-  - The form enforces **input validation**, preventing blank or whitespace-only submissions (`pattern="\S(.*\S)?" required`).  
-  - The **"Submit" button (`#submit_score`)** correctly registers the name and score in the leaderboard.  
+  - The name input field (`#name`) allows users to enter their name or nickname.    
+  - The "Submit" button (`#submit`) correctly registers the name and score in the leaderboard.  
 
 - **Navigation & Call to Action:**  
-  - The **"Exit" button (`#quit_game`)** returns users to the home page.  
-  - The **"Restart game" button (`#restart_game`)** allows users to start a new game session instantly.  
-  - **ARIA labels** are applied to buttons for improved accessibility.  
+  -The screen instantly loads the home page again once the submit button is pressed.
 
 - **Branding & Design:**  
   - The page maintains a **consistent visual style** with the rest of the site.  

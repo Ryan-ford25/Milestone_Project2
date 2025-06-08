@@ -217,8 +217,4 @@ function endGame() {
     $("#game_screen").addClass("hidden");             //Adds the css class 'hidden' to the game screen in order to hide it 
     $("#end_screen").removeClass("hidden");            //Removes the class 'hidden' to display the end screen message
     endScore();                                    //Runs the endScore function to display the level reached
-    //$("#end_screen").on("click", function(){          //users a click listener to wait for input from the user
-      //  $("#end_screen").addClass("hidden");           //When the user clicks on end screen the 'hidden' class will be added to the end screen to hide it
-     //   $("#welcome_screen").removeClass("hidden");    //Removes the class 'hidden' from welcome screen to display it again allowing the user to restart
-   // });
 }
