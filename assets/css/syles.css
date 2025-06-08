@@ -114,7 +114,8 @@ li{
     height: auto;
     padding: 10px;
     text-align: center;
-    width: 450px;
+    max-width: 450px;
+    ;
 }
 
 /*End Screen*/
@@ -137,13 +138,5 @@ li{
         flex-direction: column;
         align-items: center;
         gap: 5px;
-    }
-
-    .view_area2{
-        width: 28vw;
-        height: auto;
-        margin: auto;
-        padding: 10px;
-        text-align: center;
     }
 }
