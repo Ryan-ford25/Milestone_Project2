@@ -39,7 +39,7 @@ Testing was an **integral part of the development process**, ensuring the websit
 
 Additionally, **ChatGPT** served as a key resource for refining ideas, optimizing content, and overcoming technical challenges. By offering structured guidance, best practices, and alternative solutions, it contributed to improving both the efficiency of development and the overall quality of the final product.
 
-To guarantee **cross-device compatibility**, every page was rigorously tested across various **screen sizes and devices** using Chrome Developer Tools. This process ensured that Echoes of Light was fully responsive, providing a seamless user experience across **desktops, tablets, and mobile devices**.
+To guarantee **cross-device compatibility**, every screen was rigorously tested across various **screen sizes and devices** using Chrome Developer Tools. This process ensured that Echoes of Light was fully responsive, providing a seamless user experience across **desktops, tablets, and mobile devices**.
 
 ---
 
@@ -195,8 +195,8 @@ To ensure that the colours used on the webpage weren't going to make it harder f
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
 | **As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty** | The homepage provides clear buttons for Starting the game, viewing the rules and leaderboard. All buttons include ARIA labels for accessibility. |
-| **As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.** | The Rules Page presents a quick and simple explanation of the rules in a list format. It outlines how to play, how the lives system works and how the scoring system works. The 'Start' button at the bottom allows for a quick transition after the user is done reading them. |
-| **As a new site user, I want to start my first game easily, so that I can jump straight into the fun.** | The homepage contains a 'Start' button which allows the user to jump straight in making the process from loading the page to playing the game quick and seamless |
+| **As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.** | The Rules screen presents a quick and simple explanation of the rules in a list format. It outlines how to play, how the lives system works and how the scoring system works. The 'Start' button at the bottom allows for a quick transition after the user is done reading them. |
+| **As a new site user, I want to start my first game easily, so that I can jump straight into the fun.** | The homepage contains a 'Start' button which allows the user to jump straight in making the process from loading the screen to playing the game quick and seamless |
 | **As a new site user, I want to see my score and progress, so that I feel motivated to improve and replay.** | On the Game screen at the bottom is a display for the score which updates automatically as they progress and at the end of the game the level they reached is displayed **encouraging a replay** and their high score is updated for the next game. |
 
 #### Returning Visitors
@@ -209,7 +209,7 @@ To ensure that the colours used on the webpage weren't going to make it harder f
 
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
-| **As a frequent site user, I want to see a leaderboard of top game scores, so that I can compare my performance with others and stay motivated to improve.** | The Leaderboard page dynamically updates with the top 10 scores. Users can submit their name and see their ranking after completing a run of the game. |
+| **As a frequent site user, I want to see a leaderboard of top game scores, so that I can compare my performance with others and stay motivated to improve.** | The Leaderboard screen dynamically updates with the top 10 scores. Users can submit their name and see their ranking after completing a run of the game. |
 ---
 
 <a id=features-test></a>
@@ -220,19 +220,19 @@ To ensure that the colours used on the webpage weren't going to make it harder f
 
 ### Existing Features
 
-### Home Page page
+### Home screen screen
 
 #### Overview
-The **Home Page** serves as the entry point, introducing users to the game and providing navigation options to key sections. It ensures a smooth experience for the user with an engaging simple aesthetic.
+The **Home screen** serves as the entry point, introducing users to the game and providing navigation options to key sections. It ensures a smooth experience for the user with an engaging simple aesthetic.
 
 #### Features Tested:
 - **Introduction & Engagement:**  
-  - The page presents a clear and engaging welcome message that highlights what type of game it is and immediately tempts the user to a challenge.  
+  - The screen presents a clear and engaging welcome message that highlights what type of game it is and immediately tempts the user to a challenge.  
   - The description uses clear bold to make the text standout. 
   - The message is formatted properly, ensuring readability across different devices.  
 
 - **Navigation & Call to Action:**  
-  - The "Rules" button (`#rules`) correctly navigates users to the rules page.  
+  - The "Rules" button (`#rules`) correctly navigates users to the rules screen.  
   - The "Leaderboard" button (`#leaderboard`) allows users to view the top scores.  
   - The "Start" button (`#start`) initiates and smoothly transitions users into the game.  
   - ARIA labels are applied to all buttons for improved accessibility.  
@@ -244,30 +244,30 @@ The **Home Page** serves as the entry point, introducing users to the game and p
   -  - Semantic HTML elements (`<ul>`, `<li>`, `<button>`) improve screen reader support.  
 
 - **Responsiveness & Accessibility:**  
-  - The home page adapts well to various screen sizes (desktop, tablet, mobile).    
+  - The home screen adapts well to various screen sizes (desktop, tablet, mobile).    
   -   
 
 - **Performance & Functionality:**  
-  - The home page loads quickly, with no missing or broken elements.  
+  - The home screen loads quickly, with no missing or broken elements.  
   - The buttons work correctly, allowing users to navigate between sections without errors.  
 
 <details>
-<summary>Click here to see the Home Page page</summary>
+<summary>Click here to see the Home screen screen</summary>
 
-![Home Page](assets/documentation/am_i_responsive_home.PNG)
+![Home screen](assets/documentation/am_i_responsive_home.PNG)
 
 </details>
 <br>
 <hr>
 
-### Rules page
+### Rules screen
 
 #### Overview
-The **Rules Page** provides users with clear and concise guidelines on how the game. It ensures players understand the gameplay mechanics, scoring and lives systems.
+The **Rules screen** provides users with clear and concise guidelines on how the game. It ensures players understand the gameplay mechanics, scoring and lives systems.
 
 #### Features Tested:
 - **Rules Display & Readability:**  
-  - The page correctly presents the key game rules in a list format using the unordered list tag, (`<ul>`).  
+  - The screen correctly presents the key game rules in a list format using the unordered list tag, (`<ul>`).  
   - The rules are structured for easy reading and clearly outline:  
     - How the sequence is shown  
     - The users task (relaying the sequence)  
@@ -277,11 +277,11 @@ The **Rules Page** provides users with clear and concise guidelines on how the g
 
 - **Navigation & Call to Action:**  
   - The "Start" button (`#start2`) begins the game and transitions users smoothly.  
-  - The "Exit" button (`#leaderboard2`) allows users to return to the home page.  
+  - The "Exit" button (`#leaderboard2`) allows users to return to the home screen.  
   - ARIA labels are applied to all buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The rules page follows the consistent styling of the site, ensuring visual uniformity.  
+  - The rules screen follows the consistent styling of the site, ensuring visual uniformity.  
   - The button layout is intuitive, with "Exit" and "Start" options clearly defined.  
   - The list structure ensures that it is formatted correctly across all devices.  
 
@@ -291,23 +291,23 @@ The **Rules Page** provides users with clear and concise guidelines on how the g
   - Semantic HTML elements (`<h2>`, `<ul>`, `<li>`, `<button>`) improve screen reader support.  
 
 - **Performance & Functionality:**  
-  - The rules page loads quickly, with no broken elements or missing content.  
+  - The rules screen loads quickly, with no broken elements or missing content.  
   - The "Start" button correctly transitions users into the game.
   - The "Leaderboard" button correctly transitions users to the leaderboard screen.  
 
 <details>
-<summary>Click here to see the Rules page</summary>
+<summary>Click here to see the Rules screen</summary>
 
-![Rules page](assets/documentation/am_i_responsive_rules.PNG)
+![Rules screen](assets/documentation/am_i_responsive_rules.PNG)
 
 </details>
 <br>
 <hr>
 
-### game page
+### game screen
 
 #### Overview
-The **game page** provides an interactive interface for uses to see and relay the given sequence. It dynamically updates the sequence, manages user responses, and displays the current score and lives aswell as displays the correct high score value if the user has played already. The page ensures a smooth and engaging game experience.
+The **game screen** provides an interactive interface for uses to see and relay the given sequence. It dynamically updates the sequence, manages user responses, and displays the current score and lives aswell as displays the correct high score value if the user has played already. The screen ensures a smooth and engaging game experience.
 
 #### Features Tested:
 - **Sequence Display & Dynamic Updates:**  
@@ -327,7 +327,7 @@ The **game page** provides an interactive interface for uses to see and relay th
   - The (#`high_score`) will be updated if the current score value is larger.
 
 - **Branding & Design:**  
-  - The game page maintains a consistent theme and visual design with the rest of the site.  
+  - The game screen maintains a consistent theme and visual design with the rest of the site.  
   - The layout is structured for easy readability and user engagement.    
 
 - **Responsiveness & Accessibility:**  
@@ -340,36 +340,36 @@ The **game page** provides an interactive interface for uses to see and relay th
   - User input is disabled (While a sequence is being displayed) and enables (when the sequence has finished playing) at the correct time.
 
 <details>
-<summary>Click here to see the game page</summary>
+<summary>Click here to see the game screen</summary>
 
-![game page](assets/documentation/am_i_responsive_game.PNG)
+![game screen](assets/documentation/am_i_responsive_game.PNG)
 
 </details>
 <br>
 <hr>
 
-### End Page
+### End screen
 
 #### Overview
-The **End page** provides users with a clear message to explain that the game has ended. It displays the message 'You ran out of Lives' aswell as the level they achieved. It gives a prompt for the users name and saves it locally for the leaderboard and then continues to the home page.
+The **End screen** provides users with a clear message to explain that the game has ended. It displays the message 'You ran out of Lives' aswell as the level they achieved. It gives a prompt for the users name and saves it locally for the leaderboard and then continues to the home screen.
 
 #### Features Tested:
 - **Score Display & Feedback:**  
-  - The page correctly displays the user’s final score with `document.getElementById("end_score").innerText = You made it to Level: ${game.score}`;.
+  - The screen correctly displays the user’s final score with `document.getElementById("end_score").innerText = You made it to Level: ${game.score}`;.
 
 - **Leaderboard Submission Functionality:**  
   - The name input field (`#name`) allows users to enter their name or nickname.    
   - The "Submit" button (`#submit`) correctly registers the name and score in the leaderboard.  
 
 - **Navigation & Call to Action:**  
-  -The screen instantly loads the home page again once the submit button is pressed.
+  -The screen instantly loads the home screen again once the submit button is pressed.
 
 - **Branding & Design:**  
-  - The page maintains a consistent visual style with the rest of the site.  
+  - The screen maintains a consistent visual style with the rest of the site.  
   - The layout is structured to ensure easy readability and interaction.  
 
 - **Responsiveness & Accessibility:**  
-  - The End page adapts well to different screen sizes from small mobiles to larg desktops..  
+  - The End screen adapts well to different screen sizes from small mobiles to larg desktops..  
   - The form elements (`<input>`, `<button>`)** are accessible via keyboard navigation and screen readers.  
   - The use of semantic HTML elements (`<h1>`, `<p>`, `<form>`, `<input>`, `<button>`) enhances accessibility.  
 
@@ -377,21 +377,21 @@ The **End page** provides users with a clear message to explain that the game ha
   - The score updates dynamically upon inputting the correct sequence.
   - The lives are updated properly when the input is incorrect.  
   - The submission form works correctly, successfully adding scores to the leaderboard.  
-  - The page loads efficiently without broken elements or layout shifts.  
+  - The screen loads efficiently without broken elements or layout shifts.  
 
 <details>
-<summary>Click here to see the End page</summary>
+<summary>Click here to see the End screen</summary>
 
-![End page](documentation/testing-features-results.webp)
+![End screen](documentation/testing-features-results.webp)
 
 </details>
 <br>
 <hr>
 
-### Leaderboard page
+### Leaderboard screen
 
 #### Overview
-The Leaderboard page provides users with a ranked list of the top 10 scores, dynamically updating based on game performance. It enhances user engagement by displaying competitive scores and offering options to start the game or view the rules.
+The Leaderboard screen provides users with a ranked list of the top 10 scores, dynamically updating based on game performance. It enhances user engagement by displaying competitive scores and offering options to start the game or view the rules.
 
 #### Features Tested:
 - **Leaderboard Display & Dynamic Updates:**  
@@ -404,7 +404,7 @@ The Leaderboard page provides users with a ranked list of the top 10 scores, dyn
   - ARIA labels are applied to buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The page maintains the consistent styling of the site.  
+  - The screen maintains the consistent styling of the site.  
   - Uses clear, readable fonts and a structured table format for clarity.    
 
 - **Responsiveness & Accessibility:**  
@@ -415,12 +415,12 @@ The Leaderboard page provides users with a ranked list of the top 10 scores, dyn
 - **Performance & Functionality:**  
   - The leaderboard updates instantly after the game is completed.  
   - The "Start" and "Rules" buttons work as expected, redirecting users to the appropriate screen.  
-  - The page loads without delays or broken styling, ensuring a smooth user experience.  
+  - The screen loads without delays or broken styling, ensuring a smooth user experience.  
 
 <details>
-<summary>Click here to see the Leaderboard page</summary>
+<summary>Click here to see the Leaderboard screen</summary>
 
-![Leaderboard page](assets/documentation/am_i_responsive_leaderboard.PNG)
+![Leaderboard screen](assets/documentation/am_i_responsive_leaderboard.PNG)
 
 </details>
 <br>
@@ -430,77 +430,47 @@ The Leaderboard page provides users with a ranked list of the top 10 scores, dyn
 
 ## Manual Features Testing
 
-### Home Page
+### Home screen
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Rules** button | The **rules** page should open, displaying instructions on how to play the game | Clicked on the **rules** button | The **rules** page opened and displayed the instructions correctly | No fix required | <img src="assets/documentation/home_to_rules.gif" alt="home to rules gif" width="500"> |
-| **Leaderboard** button | The **leaderboard** page should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** page opened and displayed the top 10 scores correctly | No fix required | ![screenshot](documentation/testing-home-leaderboard.gif) |
-| **Start** button | The game page should open and begin with the first sequence | Clicked on the **Start** button | The game page opened and the first sequence was shown | No fix required | ![screenshot](documentation/testing-home-start.gif) |
+| **Rules** button | The **rules** screen should open upon click, displaying the instructions on how to play the game | Clicked on the **rules** button | The **rules** screen opened and displayed the instructions correctly | No fix required | <img src="assets/documentation/home_to_rules.gif" alt="home to rules gif" width="300"> |
+| **Leaderboard** button | The **leaderboard** screen should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** screen opened and displayed the top 10 scores correctly | No fix required | <img src="assets/documentation/home_to_leaderboard.gif" alt="home to leaderboard gif" width="300"> |
+| **Start** button | The **game** screen should open and begin with the first sequence | Clicked on the **Start** button | The **game** screen opened and the first sequence was shown | No fix required | <img src="assets/documentation/home_to_game.gif" alt="home to rules gif" width="300"> |
 
 ---
 
-### game Rules Page
+### Rules screen
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Exit** button | The **rules** page should close, revealing the home page page | Clicked on the **Exit** button | The **rules** page closed, and the home page page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-rules-exit.gif) |
-| **Start game** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Start game** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.gif) |
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.webp) ![screenshot](documentation/testing-game-exithover.webp) |
-| **Start game** button - hover effect | When hovered over, the **Start** button should change from dark blue text to white text | Hovered over the **Start** button | The **Start** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.webp) ![screenshot](documentation/testing-rules-starthover.webp) |
+| **Leaderboard** button | The **rules** screen should close, revealing the **leaderboard** screen | Clicked on the **leaderboard** button | The **rules** screen closed, and the leaderboard screen was revealed | No fix required | <img src="assets/documentation/rules_to_leaderboard.gif" alt="Rules to leaderboard gif"  width="300"> |
+| **Start** button | The **rules** screen should close and the **game** screen should open and begin with the first sequence | Clicked on the **Start** button | The **game** screen opened and the first sequence was shown  | No fix required | <img src="assets/documentation/rules_to_game.gif" alt="Rules to game gif" width="300">  |
 
 ---
 
-### Leaderboard Page
+### Leaderboard screen
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Exit** button | The **leaderboard** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **leaderboard** page closed, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-exit.gif) |
-| **Restart game** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Restart game** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.gif) |
-| **Scores** are displayed | If the user achieves and submits a score that ranks within the top ten of previously submitted scores, it should be displayed in the  **leaderboard** table | Played the game and aimed to beat the lowest score in the current **leaderboard** | The highest scores in the top ten were successfully submitted and displayed in the **leaderboard** table | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-table.webp)
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-exit.webp) ![screenshot](documentation/testing-leaderboard-exithover.webp) |
-| **Restart game** button - hover effect | When hovered over, the **Restart game** button should change from dark blue text to white text | Hovered over the **Restart game** button | The **Restart game** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.webp) ![screenshot](documentation/testing-leaderboard-restarthover.webp) |
+| **Rules** button | The **leaderboard** screen should close, revealing the **rules** screen | Clicked on the **rules** button | The **leaderboard** screen closed, and the **rules** screen was revealed | No fix required | <img src="assets/documentation/leaderboard_to_rules.gif" width="300" alt="Leaderboard to rules gif"> |
+| **Start** button | The **game** screen should be revealed and the first sequence should be played| Clicked on the **Start** button | The **game** screen was revealed and the first sequence played | No fix required | <img src="assets/documentation/leaderboard_to_game.gif" width="300" alt="leaderboard to game gif"> |
+| **Scores** are displayed | If the user achieves and submits a score that ranks within the top ten of previously submitted scores, it should be displayed in the  **leaderboard** table |I played the game and asked 10 other people to play the game to ensure it showed 10 scoeres | The highest scores in the top ten were successfully submitted and displayed in the **leaderboard** table | No fix required | <img src="assets/documentation/leaderboard.PNG" alt="leaderboard screenshot" width="300">
 
 ---
 
-### Difficulty Page
+### game screen
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Easy** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the easy game URL | Clicked on the **Easy** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-easyapi.webp) |
-| **Medium** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the medium game URL | Clicked on the **Medium** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-mediumapi.webp) |
-| **Hard** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the hard game URL | Clicked on the **Hard** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-hardapi.webp) |
-| **Exit** button | The **difficulty** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **difficulty** page closed, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-exit.gif) |
-| **Difficulty** buttons - hover effect | When hovered over, the **difficulty** buttons should change from a dark blue background to a light blue background | Hovered over each **difficulty** button | The **difficulty** buttons changed from a dark blue background to a light blue background when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-hover.gif) |
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-exit.webp) ![screenshot](documentation/testing-difficulty-exithover.webp) |
-
-### ⛔️ Difficulty Page - Negative Testing Scenarios
-
-| Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
-| --- | --- | --- | --- | --- | --- |
-| Corrupt API Data | The game should gracefully handle missing or broken data | Modified API url to return incomplete data and selected each difficulty button to activate API call | game was redirected to 500 error page | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-500.gif) |
-| Score Reset on Restart | Score should reset to `0` when restarting game | Clicked on each **Difficulty** button in turn to restart the game | Score was reset to `0` each time | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-restart.gif) |
-
----
-
-### game Page
-
-| Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
-| --- | --- | --- | --- | --- | --- |
-| **Question no.** indicator | After the game begins, the **question no.** indicator should increment by 1 each time the **Next button** is clicked after a question is answered or when the timer expires  | Clicked the **Next button** after the game began | The **Question No.** indicator incremented by **1** when the **Next button** was clicked | ✅ No fix needed | ![screenshot](documentation/testing-game-question.gif) |
-| **Timer** function | After the game begins, the **Timer** should count down from **15 to 0**. When the Timer reaches **0**, “Time’s up!” should be displayed. Upon clicking the **Next button**, the **Timer** should reset to “Time: 15” and start counting down again | Selected a **difficulty** level to start the game. Clicked the **Next** button to reset the **Timer** | The game began, and the **Timer** counted down from **15 to 0**. “Time’s up!” was displayed. After clicking the **Next** button, the **Timer** reset to “Time: 15” and restarted the countdown | ✅ No fix needed | ![screenshot](documentation/testing-game-timer.gif) |
-| **Time line** function | After the game begins, the Time Line should decrease in width by 1/15 for each second the timer decrements | Selected a **difficulty** level to start the game. Clicked the **Next** button to reset the **Timer** | The game began, and the **Time Line** decreased in width by 1/15 each second as the timer decremented | ✅ No fix needed | ![screenshot](documentation/testing-game-timer.gif) |
-| **Timer pause** function | After a question is answered, the **Timer** and **Time Line** should pause immediately | Answered a question | The **Timer** and **Time Line** paused immediately | ✅ No fix needed | ![screenshot](documentation/testing-game-pause.gif) |
-| **game questions** and **answers** | A new set of **game questions** and **answers** should be displayed each time the game begins or the **Next** button is clicked | Selected a **difficulty** level to start the game. Clicked the **Next** button to access the next question | A new set of **game questions** and **answers** was displayed each time | ✅ No fix needed | ![screenshot](documentation/testing-game-questions.gif) |
-| **Correct** and **Incorrect** answer indicators | When an answer is submitted: if it is **correct**, the border of the selected answer button should turn **green**, and a **green tick icon** should appear to the right of the answer text inside the button. If the answer is **incorrect**, the border of the selected answer button should turn **red**, and a **red cross icon** should appear to the right of the answer text inside the button. If the **timer expires**, the correct answer should be highlighted with a **green border** and a **green tick icon** | Selected both **correct** and **incorrect** answers. Allowed the timer to expire | When a **correct** answer was selected, the border turned **green**, and a **green tick icon** appeared. When an **incorrect** answer was selected, the border turned **red**, and a **red cross icon** appeared. When the **timer** expired, the **correct** answer was displayed with a **green** border and a **green tick icon** | ✅ No fix needed | ![screenshot](documentation/testing-game-correct.webp) ![screenshot](documentation/testing-game-incorrect.webp) |
-| **Score** function | When a question is answered correctly, the **score** should increment by **10**, up to a maximum of **100** for 10 correct answers | Answered **10** questions correctly | The **score** incremented by **10** for each correct answer, reaching a maximum of **100** for **10** correct answers | ✅ No fix needed | ![screenshot](documentation/testing-game-score.gif) |
+| **Variable defaults** | Everytime the game begins the **variables should be reset to and display their defaults. Except from the high score variable** if the user has already played a game prior it should be their max score  | Started a game and checked displayed values. | The values were displayed correctly; Lives: 3 , Score: 0 , High Score: 10 (Due to that being my highest achieved score so far)| No fix required | <img src="assets/documentation/default_values.PNG" alt="default values screenshot" width="750"> |
+| **New level** | Everytime the user gets the input correct the game should display the same sequence with **an additional square added each time** | Played a game to ensure that a square was added on to the previous sequence | The game displayed the same sequence with an additional square each time | No fix requried | <img src="assets/documentation/extendin sequence test.gif" alt="Extending sequence test gif" with="300"> |
+| **Scoring system** | When the input from the user is **correct** the score value should be incremented by 1 | **Correctly relayed** the given sequence | The score **was incremented by 1** each time I got the input correct | No fix required | <img src="assets/documentation/score_increment_test.gif" alt="score increment test gif" width="750"> |
+| **Lives system**| When the input given by the user is **incorrect** the **Lives value should decrease by 1** | Gave **incorrect** input | The Lives **were decreased by 1** each time | No fix required | ![screenshot](documentation/testing-game-score.gif) |
 | **Next** button | When an answer is selected or when the timer expires, revealing the correct and/or incorrect answers, the **Next** button should appear. Upon clicking the **Next** button, the **next question** should be displayed, the timer should reset, the **question number** should increment, and the **Next** button should disappear | Selected an answer and allowed the timer to expire | When an answer was selected or the timer expired, the correct and/or incorrect answers were displayed, and the **Next** button appeared. Upon clicking the **Next** button, the next question was shown, the timer reset, the question number incremented, and the **Next** button disappeared | ✅ No fix needed | ![screenshot](documentation/testing-game-next.gif) |
-| **Exit** button | The **game** page should close and the game should end, revealing the **home page** page | Clicked on the **Exit** button | The **difficulty** page closed and the game ended, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.gif) |
-| **Answer** buttons - hover effect | When hovered over, the **Answer** buttons should change from a dark blue background to a light blue background | Hovered over each **Answer** button | The **Answer** buttons changed from a dark blue background to a light blue background when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-hover.gif) |
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.webp) ![screenshot](documentation/testing-game-exithover.webp) |
-| **Next** button - hover effect | When hovered over, the **Next** button should change from a green background to a white background | Hovered over the **Next** button | The **Next** button changed from a green background to a white background | ✅ No fix needed | ![screenshot](documentation/testing-game-next.webp) ![screenshot](documentation/testing-game-nexthover.webp) |
+| **Exit** button | The **game** screen should close and the game should end, revealing the **home screen** screen | Clicked on the **Exit** button | The **difficulty** screen closed and the game ended, and the **home screen** screen was revealed | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.gif) |
 
-### ⛔️ game Page - Negative Testing Scenarios
+### ⛔️ game screen - Negative Testing Scenarios
 
 | Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
@@ -510,18 +480,18 @@ The Leaderboard page provides users with a ranked list of the top 10 scores, dyn
 
 ---
 
-### End page
+### End screen
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | **Score** display | The score achieved in the game should be correctly displayed as `You scored: x out of 100` | Completed the game and noted the score | The score was displayed correctly | ✅ No fix needed | ![Screenshot](documentation/testing-results-scorestar.webp) |
-| **Exit** button | The **results** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **results** page closed and the **home page** page was revealed | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.gif) |
+| **Exit** button | The **results** screen should close, revealing the **home screen** screen | Clicked on the **Exit** button | The **results** screen closed and the **home screen** screen was revealed | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.gif) |
 | **Leaderboard** Name Submission | After the game is completed. A name of up to 20 characters can be entered into the form field and submitted to the leaderboard by clicking the submit button. If the user has a top 10 score, their entry is displayed on the leaderboard. | After the game was completed, a 20 character name was entered into the form and submitted. | The name and score appeared in the leaderboard table. | ✅ No fix needed | ![Screenshot](documentation/testing-results-leaderboard.gif) |
 | **Submit** button - hover effect | When hovered over, the **Submit** button should change from dark blue text to white text | Hovered over the **Submit** button | The **Submit** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-submitbutton.webp) ![Screenshot](documentation/testing-results-submitbuttonhover.webp) |
 | **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.webp) ![Screenshot](documentation/testing-results-exithover.webp) |
 | **Restart game** button - hover effect | When hovered over, the **Restart game** button should change from dark blue text to white text | Hovered over the **Restart game** button | The **Restart game** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-restart.webp) ![Screenshot](documentation/testing-results-restarthover.webp) |
 
-### ⛔️ End page - Negative Testing Scenarios
+### ⛔️ End screen - Negative Testing Scenarios
 
 | Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |

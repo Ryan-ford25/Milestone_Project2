@@ -41,14 +41,10 @@ This game features a memory challenge inspired by the classic 'Simon' game, wher
     - [Tablet Wireframes](#tablet-frames)
     - [Desktop Wireframes](#desktop-frames)
       - [Features](#features)
-      - [The Home Page](#home-page-features)
-      - [The Rules Page](#rules-page-features)
-      - [The Leaderboard Page](#leaderboard-page-features)
-      - [The Difficulty Page](#difficulty-page-features)
-      - [The Quiz Page](#quiz-page-features)
-      - [The Results Page](#results-page-features)
-      - [The 404 Page](#404-page-features)
-      - [The 500 Page](#500-page-features)
+      - [The Home Screen](#home-screen-features)
+      - [The Rules Screen](#rules-screen-features)
+      - [The Leaderboard screen](#leaderboard-screen-features)
+      - [The Game Screen](#game-screen-features)
       - [Future Implementations](#future-implementation)
 
 * [Technologies Used](#technologies)
@@ -199,11 +195,11 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Mobile Wireframes </summary>
 
-|                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
+|                Home Screen wireframe                |                Rules Screen wireframe                 |                   Leaderboard Screen wireframe                    |
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
 | ![Home](assets/documentation/mobile_home_screen.PNG) | ![Rules](assets/documentation/mobile_rules_screen.PNG) | ![Leaderboard](assets/documentation/mobile_leaderboard_screen.PNG) |
 
-|                   Game page wireframe                   |               End page wireframe              |              
+|                   Game Screen wireframe                   |               End Screen wireframe              |              
 | :-----------------------------------------------------------: | :-----------------------------------------------: | 
 | ![Game](assets/documentation/mobile_game_screen.PNG) | ![End](assets/documentation/mobile_end_screen.PNG) | 
 
@@ -216,11 +212,11 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Tablet Wireframes </summary>
 
-|                Home page wireframe                |                Rules page wireframe                 |                   Leaderboard page wireframe                    |
+|                Home Screen wireframe                |                Rules Screen wireframe                 |                   Leaderboard Screen wireframe                    |
 | :-----------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------------: |
 | ![Home](assets/documentation/tablet_home_screen.PNG) | ![Rules](assets/documentation/tablet_rules_screen.PNG) | ![Leaderboard](assets/documentation/tablet_leaderboard_screen.PNG) |
 
-|                   Game page wireframe                   |               End page wireframe              |              
+|                   Game Screen wireframe                   |               End Screen wireframe              |              
 | :-----------------------------------------------------------: | :-----------------------------------------------: | 
 | ![Game](assets/documentation/tablet_game_screen.PNG) | ![End](assets/documentation/tablet_end_screen.PNG) | 
 
@@ -234,23 +230,23 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 <details>
 <summary> Click here to see the Desktop Wireframes </summary>
 
-- Home page wireframe
+- Home screen wireframe
 
 ![Home](assets/documentation/desktop_home_screen.PNG)
 
-- Rules page wireframe
+- Rules screen wireframe
 
 ![Rules](assets/documentation/desktop_rules_screen.PNG)
 
-- Leaderboard page wireframe
+- Leaderboard screen wireframe
 
 ![Leaderboard](assets/documentation/desktop_leaderboard_screen.PNG)
 
-- Game page wireframe
+- Game screen wireframe
 
 ![Game](assets/documentation/desktop_game_screen.PNG)
 
-- End page wireframe
+- End screen wireframe
 
 ![End](assets/documentation/desktop_end_screen.PNG)
  </details>
@@ -259,7 +255,7 @@ Using [Balsamiq](https://balsamiq.com/), wireframes were developed for mobile, t
 
 ### Features
 
-The website consists of a home page featuring a series of different screen panels that are dynamically shown or hidden, controlled by button interactions.
+The website consists of a home screen featuring a series of different screen panels that are dynamically shown or hidden, controlled by button interactions.
 
 All Pages on the website are responsive and have:
 
@@ -272,20 +268,20 @@ All Pages on the website are responsive and have:
 
 </details>
 
-<a id=home-page-features></a>
+<a id=home-screen-features></a>
 
-#### The Home Page
+#### The home screen
 
 <details>
-<summary> Click here to view the home page </summary>
+<summary> Click here to view the home screen </summary>
 
-![Echoes of Light shown home page on various screen sizes](assets/documentation/am_i_responsive_home.PNG)
+![Echoes of Light shown home screen on various screen sizes](assets/documentation/am_i_responsive_home.PNG)
 
 </details>
 
 ---
 
-The home page for the Echoes of Light memory game was designed to be engaging and interactive in order to bring attention from new and returning users. Below are the key features and what they offer to the user:
+The home screen for the Echoes of Light memory game was designed to be engaging and interactive in order to bring attention from new and returning users. Below are the key features and what they offer to the user:
 
 - What it does:
   - Welcomes the user with a call-to-action: “Click the start button to jump straight in”.
@@ -302,14 +298,14 @@ The home page for the Echoes of Light memory game was designed to be engaging an
 
 The homepage effectively sets the stage for whats to come. It provides an engaging, competitive, and replayable game that caters to all ages.
 
-<a id=rules-page-features></a>
+<a id=rules-screen-features></a>
 
-#### The Rules Page
+#### The rules screen
 
 <details>
-<summary> Click here to view the rules page </summary>
+<summary> Click here to view the rules screen </summary>
 
-![Echoes of Light rules page shown on multiple screen sizes](assets/documentation/am_i_responsive_rules.PNG)
+![Echoes of Light rules screen shown on multiple screen sizes](assets/documentation/am_i_responsive_rules.PNG)
 
 </details>
 
@@ -324,14 +320,14 @@ The homepage effectively sets the stage for whats to come. It provides an engagi
   - Start button: Begins the memory game straight away.
   - Leaderboard button: Displays the Leaderboard.
 
-<a id=leaderboard-page-features></a>
+<a id=leaderboard-screen-features></a>
 
-#### The Leaderboard Page
+#### The Leaderboard Screen
 
 <details>
-<summary> Click here to view the leaderboard page </summary>
+<summary> Click here to view the Leaderboard Screen </summary>
 
-![Echoes of Light leaderboard screen shown on multiple screen sizes](assets/documentation/am_i_responsive_leaderboard.PNG)
+![Echoes of Light Leaderboard screen shown on multiple screen sizes](assets/documentation/am_i_responsive_leaderboard.PNG)
 
 </details>
 
@@ -349,12 +345,12 @@ The homepage effectively sets the stage for whats to come. It provides an engagi
   - Start button: Starts the game.
   - Rules button: Switches to rules screen.
 
-<a id=End-page-features></a>
+<a id=End-screen-features></a>
 
-#### The End page
+#### The End screen
 
 <details>
-<summary> Click here to view the end page </summary>
+<summary> Click here to view the end screen </summary>
 
 ![Echoes of Light end screen shown on multiple screen sizes](assets/documentation/am_i_responsive_end.PNG)
 
@@ -373,14 +369,14 @@ The homepage effectively sets the stage for whats to come. It provides an engagi
 - Interactive Elements:
   - On screen Click: User can click anywhere making it quick and easy.
 
-<a id=game-page-features></a>
+<a id=game-screen-features></a>
 
-#### The Game page
+#### The Game screen
 
 <details>
-<summary> Click here to view the game page </summary>
+<summary> Click here to view the game screen </summary>
 
-![Echoes of Light game page shown on multiple screen sizes](assets/documentation/am_i_responsive_game.PNG)
+![Echoes of Light game screen shown on multiple screen sizes](assets/documentation/am_i_responsive_game.PNG)
 
 </details>
 
@@ -428,7 +424,7 @@ HTML, CSS, JavaScript
 
 - [LucidCharts](https://www.lucidchart.com/) - Used to create the flow diagrams.
 
-- [OpenAI](https://openai.com/) - Used to create the logo for the page.
+- [OpenAI](https://openai.com/) - Used to create the logo for the screen.
 
 - [Git](https://git-scm.com/) - For version control.
 
