@@ -94,9 +94,9 @@ I attempted to test with [Jest](https://jestjs.io/) but I encountered complicati
 
 I've tested my deployed project using the Lighthouse Audit tool to test the performance, accessibility, best practices and SEO of the website.
 
-| Page | Mobile | Desktop | Notes |
-| :--: | :--: | :--: | :--: |
-| Home | ![screenshot](assets/documentation/mobile_lighthouse_report.PNG) | ![screenshot](assets/documentation/desktop_lighthouse_report.PNG) | Both tests passed and came back with excellent results |
+| Mobile | Desktop | Notes |
+| :--: | :--: | :--: |
+| ![screenshot](assets/documentation/mobile_lighthouse_report.PNG) | ![screenshot](assets/documentation/desktop_lighthouse_report.PNG) | Both tests passed and came back with excellent results |
 ---
 
 <a id=manual-testing></a>
@@ -135,34 +135,38 @@ Additionally, I used the [Mobile First Plugin](https://www.webmobilefirst.com/en
 
 #### Mobile Devices
 
-| Device tested | Screen Width (px) | Screen Height (px) | Result | Notes (Issues Found) |
-| :---: | :---: | :---: | :---: | :---: |
-| iPhone 5 ![iPhone 5](documentation/testing-responsive-iphone5.webp) | iPhone 12/13/14 ![iPhone 12/13/14](documentation/testing-responsive-iphone15.webp) | Google Pixel 8 ![Google Pixel 8](documentation/testing-responsive-pixel8.webp) | iPhone 16 Pro Max ![iPhone 16 Pro Max](documentation/testing-responsive-iphone16max.webp) |
-| iPhone 5 | 320px | 568px | ✅ Pass | 🛠️ Removed background image and filled screen with panel |
-| iPhone 12/13/14 | 390px | 844px | ✅ Pass | 🛠️ Set info panel to hidden when other panels are visible |
-| Google Pixel 8 | 412px | 916px | ✅ Pass | 🛠️ Set info panel to hidden when other panels are visible |
-| iPhone 16 Pro Max | 440px | 956px | ✅ Pass | 🛠️ Set info panel to hidden when other panels are visible |
-
+| Device tested | Screen Width (px) | Screen Height (px) | Result |
+| :-------------: | :---------------: | :----------------: | :------: | 
+| iPhone 5
+<img src="assets/documentation/iPhone-5.png" alt="iPhone 5" height="300"> | 320px | 568px | Passed |
+| iPhone 13 
+<img src="assets/documentation/iPhone-13.png" alt="iPhone 13" height="300">| 390px | 844px | Passed |
+| Samsung S20 
+<img src="assets/documentation/Samsung-Galaxy-S20.png" alt="Samsung S20" height="300"> | 360px | 800px | Passed | 
+| Google Pixel 8
+<img src="assets/documentation/Google-Pixel-8.png" alt="google-pixel 8" height="300"> | 412px | 916px | Passed |
 
 #### Tablets
 
-| Device tested | Screen Width (px) | Screen Height (px) | Result | Notes (Issues Found) |
-| :---: | :---: | :---: | :---: | :---: |
-| iPad Mini ![iPad Mini](documentation/testing-responsive-ipadmini.webp) | Galaxy Tab S7 ![Galaxy Tab S7](documentation/testing-responsive-galaxytab.webp) | iPad Pro 11 ![iPad Pro 11](documentation/testing-responsive-ipadpro11.webp) | | |
-| iPad Mini | 768px | 1024px | ✅ Pass | 🛠️ Increased font-size to improve UI |
-| Galaxy Tab S7 | 800px | 1280px | ✅ Pass | 🛠️ Increased font-size to improve UI |
-| iPad Pro 11 | 834px | 1194px | ✅ Pass | 🛠️ Increased font-size to improve UI |
+| Device tested | Screen Width (px) | Screen Height (px) | Result |
+| :------------: | :--------------: | :----------------: | :------: |
+| iPad Mini 
+<img src="assets/documentation/iPad-Mini.png" alt="iPad Mini" height="300"> | 768px | 1024px | Passed |
+| Galaxy Tab S7
+<img src="assets/documentation/Galaxy-Tab-S7.png" alt="Galaxy Tab S7" height="300"> | 800px | 1280px |  Passed |
+| iPad Pro 11 
+<img src="assets/documentation/iPad-PRO-11.png" alt="iPad Pro 11" height="300"> | 834px | 1194px | Passed | 
 
 #### Laptops & Desktops
 
-| Device tested | Screen Width (px) | Screen Height (px) | Result | Notes (Issues Found) |
-| :---: | :---: | :---: | :---: | :---: |
-| MacBook Air 13” ![MacBook Air 13”](documentation/testing-responsive-macbookair.webp) | Dell Latitude ![Dell Latitude](documentation/testing-responsive-dell.webp) | Macbook Pro 16" ![Macbook Pro 16"](documentation/testing-responsive-macbook.webp) | iMac 24" ![iMac 24"](documentation/testing-responsive-imac24.webp) | Full HD monitor ![Full HD monitor](documentation/testing-responsive-hdmonitor.webp) |
-| MacBook Air 13” | 1280px | 800px | ✅ Pass | ✅ Fully responsive |
-| Dell Latitude | 1440px | 809px | ✅ Pass | ✅ Fully responsive |
-| Macbook Pro 16" | 1728px | 1085px | ✅ Pass | ✅ Fully responsive <br>🛠️ Added additional graphic to fill blank space on larger screens|
-| iMac 24" | 2048px | 1142px | ✅ Pass | ✅ Fully responsive <br>🛠️ Added additional graphic to fill blank space on larger screens|
-| Full HD monitor | 1920px  | 1080px | ✅ Pass | ✅ Fully responsive <br>🛠️ Added additional graphic to fill blank space on larger screens|
+| Device tested | Screen Width (px) | Screen Height (px) | Result | 
+| :------------: | :---------------: | :-----------------: | :---: |
+| MacBook Air 13” 
+<img src="assets/documentation/Macbook-Air.png" alt="MacBook Air" height="300">| 1280px | 800px | Passed | Fully responsive |
+| Dell Latitude 
+<img src="assets/documentation/Dell-Latitude.png" alt="Dell Latitude" height="300">| 1440px | 809px | Passed | Fully responsive |
+| iMac 24"
+<img src="assets/documentation/Apple-iMac-24.png" alt="Apple iMac 24" height="300"> | 2048px | 1142px | Passed | Fully responsive |
 
 
 ---
@@ -173,18 +177,13 @@ Additionally, I used the [Mobile First Plugin](https://www.webmobilefirst.com/en
 
 #### Colour contrast compliance
 
-In addition to the automated tests for accessibility standards, I used [WebAIM](https://webaim.org/resources/contrastchecker/) to test the contrast of the colours on the site for visually impaired users.
+To ensure that the colours used on the webpage weren't going to make it harder for visually impaired people to see I used [WebAim](https://webaim.org/resources/contrastchecker/) to see how good the colours chosen paired together for large and small bodies of text, the results are shown below: 
 
 | Foreground colour | Background colour | Screenshot | Testing results |
 | :-----------------: | :-----------------: | :---------------: | :---------------: |
-| `#ffffff`         | `#252733`         | ![Screenshot1](documentation/testing-access-colour1.webp)| ✅ Pass |
-| `#151724`         | `#4f9aff`         | ![Screenshot1](documentation/testing-access-colour2.webp)| ⛔️ Fail on small text <br> ✅  Pass on larger text and graphics |
-| `#4eb738`         | `#252733`         | ![Screenshot1](documentation/testing-access-colour3.webp)| ⛔️ Fail on small text <br> ✅  Pass on larger text and graphics |
-| `#e83c5a`         | `#252733`         | ![Screenshot1](documentation/testing-access-colour4.webp)| ⛔️ Fail on all text <br> ✅  Pass on graphics |
-| `#f59527`         | `#252733`         | ![Screenshot1](documentation/testing-access-colour5.webp)| ⛔️ Fail on small text <br> ✅  Pass on larger text and graphics |
-
----
-
+| `#E7C358`         | `#001433`         | <img src="assets/documentation/contrast_checker_text.PNG" alt="Contrast checker screenshot" height="300">| Passed on all text sizes and graphical objects. |
+| `#0DCAF0`         | `#001433`         | <img src="assets/documentation/contrast_checker_logo.PNG" alt="Contrast checker screenshot" height="300">| Passed on all text sizes and graphical objects. |
+| `#008CA3`         | `#001433`         | <img src="assets/documentation/contrast_checker_shadow.PNG" alt="Contrast checker screenshot" height="300">| Failed 'WCAG AAA' small text test and passed on all others but with a much lower score, however this is not an issue as this color was used to create a shadow effect for the logo. |
 ---
 
 <a id=testing-user></a>
@@ -195,7 +194,7 @@ In addition to the automated tests for accessibility standards, I used [WebAIM](
 
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
-| **As a new site user, I want to have a clear and accessible way to navigate through different sections, so that I can explore the quiz, rules, and leaderboard without difficulty.** | The homepage panel provides clear **buttons for Rules, Leaderboard, and Start Quiz**. All buttons include **ARIA labels for accessibility**. |
+| **As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty** | The homepage provides clear **buttons for Starting the game, viewing the rules and leaderboard**. All buttons include **ARIA labels for accessibility**. |
 | **As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.** | The **Rules Panel** presents a **structured ordered list** outlining quiz mechanics clearly, ensuring quick comprehension. The "Start Quiz" button allows easy transition after reading. |
 | **As a new site user, I want to start my first quiz easily, so that I can jump straight into the fun.** | The homepage panel includes a **"Start" button**, which immediately takes users to the **Difficulty Selection Panel**, making the onboarding process seamless. |
 | **As a new site user, I want to play against a timer, so that I feel a sense of challenge and excitement while answering questions quickly.** | Each question displays a **15-second countdown timer**. The **progress bar visually indicates time left**, and expired time prevents further answer selection. |

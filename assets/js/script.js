@@ -55,6 +55,7 @@ function startGame(){
     $("#welcome_screen").addClass("hidden");
     $("#game_screen").removeClass("hidden");
     $("#leaderboard_screen").addClass("hidden");
+    $("#rules_screen").addClass("hidden");
     newGame();
 }
 
