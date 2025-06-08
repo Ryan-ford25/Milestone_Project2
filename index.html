@@ -43,8 +43,15 @@
             </div>
         </div>
 
+
+
         <!--Game Screen-->
         <div id="game_screen" class="hidden view_area">
+            <!--Incorrect move message-->
+            <div id="incorrect" class="hidden">
+                <p><Strong>Nope that was not the sequence!</Strong></p>
+                <p>Try Again!</p>
+            </div>
             <div id="grid" >
                 <div data-listener="false" id="button1" class="sq1 grid_square"></div>
                 <div data-listener="false" id="button2" class="sq2 grid_square"></div>
@@ -55,6 +62,15 @@
                 <div data-listener="false" id="button7" class="sq7 grid_square"></div>
                 <div data-listener="false" id="button8" class="sq8 grid_square"></div>
                 <div data-listener="false" id="button9" class="sq9 grid_square"></div>
+                <div></div>
+            </div>
+            <div id="compsturn" class="" >
+                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                <p>Computers turn</p>
+            </div>
+            <div id="playersturn" class="hidden">
+                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                <p>Your turn</p>
             </div>
             <div id="counts" class="screen view_area">
                 <div class="score_count" id="score">Level: 0</div>
@@ -101,11 +117,6 @@
                 <button aria-label="start" class="screen button btn btn-info" id="start3" onclick="startgame()">Start</button>
                 <button aria-label="rules" class="screen button btn btn-info" id="rules2" onclick="openRules()">Rules</button>
             </div>
-        </div>
-
-        <!--Incorrect move message-->
-        <div id="incorrect" class="hidden view_area">
-            <p><Strong>Nope that was not the sequence try again!</Strong></p>
         </div>
 
         <!--Message to be displayed when a new high score is reached-->

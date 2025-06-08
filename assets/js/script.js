@@ -117,7 +117,13 @@ function lightUp(sqr){
 
 //ShowTurns function displays the sequence to the player
 function showTurns(){
-    game.turnInProgress = true;                                   //Sets the turnInProgress variable to true, which will prevent player input
+    setTimeout(() => {                                                 //Sets a delay for setting the turnInProgress function and if statement
+        game.turnInProgress = true;                                   //Sets the turnInProgress variable to true, which will prevent player input
+        if (game.turnInProgress){                                     //Checks if the turnInProgress value is equal to true. if it is it will complete the if statement. 
+            $("#compsturn").removeClass("hidden");                     //Removes the class 'hidden' from element with ID 'compsturn' (Displaying 'Computers Turn')
+            $("#playersturn").addClass("hidden");                      //Adds the class 'hidden' to element with ID 'playersturn' (Hiding 'Your turn')
+        }
+    },600);                                                       //Has a delay of600 milliseconds
     game.turnNumber = 0;                                         //Sets the turnNumber variable to 0
     if (game.turnInterval !== null){                            //If statement resets any current turnIntervals in order to prevent overlapping(doing this fixed an error with the sequence being played too fast after selecting start from the end screen)
         clearInterval(game.turnInterval);                               
@@ -128,7 +134,13 @@ function showTurns(){
         if (game.turnNumber >= game.currentGame.length){        //if statement checks if the turnNumber variable is greater than or equal to the current games length and then stops the interval
             clearInterval(game.turnInterval);                   
             game.turnInterval = null;                           //sets the value of variable turnInterval to null
-            game.turnInProgress = false;                        //sets value of turnInProgress to false to allow user input
+            setTimeout(() => {
+                game.turnInProgress = false;                   //sets value of turnInProgress to false to allow user input
+                if (!game.turnInProgress){                     //Checks if turnInProgress value is equal to false if it is it will execute the if statement
+                    $("#playersturn").removeClass("hidden");   //Removes the class 'hidden' from element with ID 'playerstrun' (Displaying 'Your Turn')
+                    $("#compsturn").addClass("hidden");        //Adds the class 'hidden' to element with ID 'compsturn' (Hiding 'Computers Turn')
+                }
+            },600);                                            //Has a delay of 600 milliseconds
         }
     }, 800);
 }
@@ -150,12 +162,20 @@ function playerTurn(){
         if (game.lives == 0){                                       //Checks if the value of lives is equal to 0
             endGame();                                              //If it is then the endGame function is ran
         } else {
-            game.playerMoves=[];                                    //If it is not equal to 0, the playerMoves variable is reset
+            game.playerMoves=[]; 
+            incorrect();                                   //If it is not equal to 0, the playerMoves variable is reset
             setTimeout(() => {                                      //Uses the timeout function in order to add an 800 millisecond delay
                 showTurns();                                        //Runs the showTurns function which will repeat the last sequence 
             }, 800);
         }
     }
+}
+
+function incorrect(){
+    $("#incorrect").removeClass("hidden");
+    setTimeout(() => {
+        $("#incorrect").addClass("hidden");
+    }, 1000);
 }
 
 //endScore function displays the players score within the message 'You made it to level: '

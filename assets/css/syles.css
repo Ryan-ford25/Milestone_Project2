@@ -65,6 +65,7 @@ li{
 
 
 /**Game Screen**/
+
 .grid_square{
     width: 33vw;
     height: 33vw;
@@ -106,6 +107,10 @@ li{
 }
 .sq9{
     background-color: #2a1142;
+}
+
+#thumbup, #thumbdown{
+    margin-top: 10px;
 }
 
 /*Leaderboard screen*/

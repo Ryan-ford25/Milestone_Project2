@@ -364,8 +364,9 @@ The **End page** provides users with a clear message to explain that the game ha
   -The screen instantly loads the home page again once the submit button is pressed.
 
 - **Branding & Design:**  
-  - The page maintains a **consistent visual style** with the rest of the site.  
-  - The **input field and buttons** are clearly distinguishable and properly styled.  
+  - The page maintains a consistent visual style with the rest of the site.  
+  - The sequence is clearly displayed to the user.
+  - It is clear to the user when the wrong sequence has been entered.
   - The layout is structured to ensure easy readability and interaction.  
 
 - **Responsiveness & Accessibility:**  
