@@ -84,13 +84,19 @@
             <h2>Rules</h2>
             <p>The rules for this game are simple.</p>
             <ul>
-                <li>The squares within the grid will light up in a random sequence.</li>
-                <li>Your task is to memorize this sequence and each turn relay it back by selecting the squares.</li>
-                <li>In this version you have three lives to start, if you fail to repeat the sequence correctly a life will be lost and the sequence will be replayed.</li>
-                <li>If your lives reach zero, you lose and will have to restart.</li>
-                <li>If you successfully relay the sequence then the game will progress to the next level.</li>
+                <li>To start, this message will be displayed below the grid: `<i class="fa-solid fa-thumbs-down fa-xl"></i>Computers turn`. That simply means sit tight while the computer displays the sequence.</li>
+                <li>The computer will <strong>flash</strong> a random square so watch carefully!</li>
+                <li>This message will then be displayed below the grid: `<i class="fa-solid fa-thumbs-up fa-xl"></i>Your turn`.</li>
+                <li>When that happens click on the <strong>same</strong> square that was lit up.</li>
+                <li>Get it right and the game moves to the next level.</li>
+                <li>Each level will add an extra square to the sequence, the higher your level the longer the sequence.</li>
+                <li>You get <strong>3 Lives</strong>. Mess up the pattern and you lose a life.</li>
+                <li>If your lives reach 0 its <strong>Game Over!</strong>.</li>
+                <li>At the end you can enter your name to see if you made it into the <strong>Top 10</strong>.</li>
+                <li>You think you can do it?</li>
+                <li>Go ahead and click the <Strong>Start</Strong> button below.</li>
+                <li>Good Luck!</li>
             </ul>
-            <p>Good Luck!</p>
             <div class="screen">
                 <button aria-label="start" class ="button btn btn-info" id="start2" onclick="startGame()">Start</button>
                 <button aria-label="leaderboard" class="button btn btn-info" id="leaderboard2" onclick="openLeaderboard()">Leaderboard</button>
