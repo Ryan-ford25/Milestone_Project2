@@ -2,6 +2,7 @@
 window.openRules = openRules;
 window.openLeaderboard = openLeaderboard;
 window.startGame = startGame;
+window.leaderBoard = leaderBoard;
 
 //Game Variables
 let game = {
@@ -184,7 +185,7 @@ function highScore(){
 
 //leaderBoard function adds the users name and score to the leaderboard screen
 function leaderBoard(){
-    const playerName = prompt("Enter your name for the Leaderboard: ");               //Sets a constant variable playerName as an input taken from the user with the prompt "Enter your name for the leaderboard: "
+    const playerName = document.getElementById("name").value;               //Sets a constant variable playerName as an input taken from the user with the prompt "Enter your name for the leaderboard: "
     localStorage.setItem("name", playerName);                                        //Stores the players name in local storage
     const finalScore = game.score;                                                    //Takes the value from the game.score variable and stores it in finalScore
     const leaderScores = JSON.parse(localStorage.getItem("leaderScores")) || [];     //Stores the value from the leaderScores variable locally if it doesn't exist it'll return null, the JSON.parse converts the string to an array, it'll default to an empty array if 'null' is passed.
@@ -215,10 +216,9 @@ function showLeaderBoard(){
 function endGame() {
     $("#game_screen").addClass("hidden");             //Adds the css class 'hidden' to the game screen in order to hide it 
     $("#end_screen").removeClass("hidden");            //Removes the class 'hidden' to display the end screen message
-    endScore();
-    leaderBoard();                                     //Runs the endScore function to display the level reached
-    $("#end_screen").on("click", function(){          //users a click listener to wait for input from the user
-        $("#end_screen").addClass("hidden");           //When the user clicks on end screen the 'hidden' class will be added to the end screen to hide it
-        $("#welcome_screen").removeClass("hidden");    //Removes the class 'hidden' from welcome screen to display it again allowing the user to restart
-    });
+    endScore();                                    //Runs the endScore function to display the level reached
+    //$("#end_screen").on("click", function(){          //users a click listener to wait for input from the user
+      //  $("#end_screen").addClass("hidden");           //When the user clicks on end screen the 'hidden' class will be added to the end screen to hide it
+     //   $("#welcome_screen").removeClass("hidden");    //Removes the class 'hidden' from welcome screen to display it again allowing the user to restart
+   // });
 }

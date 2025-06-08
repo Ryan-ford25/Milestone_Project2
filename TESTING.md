@@ -194,28 +194,22 @@ To ensure that the colours used on the webpage weren't going to make it harder f
 
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
-| **As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty** | The homepage provides clear **buttons for Starting the game, viewing the rules and leaderboard**. All buttons include **ARIA labels for accessibility**. |
-| **As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.** | The **Rules Panel** presents a **structured ordered list** outlining quiz mechanics clearly, ensuring quick comprehension. The "Start Quiz" button allows easy transition after reading. |
-| **As a new site user, I want to start my first quiz easily, so that I can jump straight into the fun.** | The homepage panel includes a **"Start" button**, which immediately takes users to the **Difficulty Selection Panel**, making the onboarding process seamless. |
-| **As a new site user, I want to play against a timer, so that I feel a sense of challenge and excitement while answering questions quickly.** | Each question displays a **15-second countdown timer**. The **progress bar visually indicates time left**, and expired time prevents further answer selection. |
-| **As a new site user, I want to see my score and progress, so that I feel motivated to improve and replay.** | The quiz footer **displays the current score dynamically** as questions are answered. The **Results Panel** shows the final score, encouraging replay. |
-| **As a new site user, I want to receive feedback on my answer choices, so that I can learn from my mistakes and improve my knowledge.** | Selected answers are **highlighted as correct or incorrect**, reinforcing learning. Incorrect answers **cannot be changed**, ensuring fair gameplay. |
+| **As a new site user, I want to have a clear and accessible way to navigate through different sections such as the rules, leaderboard and the game itself without difficulty** | The homepage provides clear buttons for Starting the game, viewing the rules and leaderboard. All buttons include ARIA labels for accessibility. |
+| **As a new site user, I want to understand the game rules quickly, so that I can start playing without confusion.** | The Rules Page presents a quick and simple explanation of the rules in a list format. It outlines how to play, how the lives system works and how the scoring system works. The 'Start' button at the bottom allows for a quick transition after the user is done reading them. |
+| **As a new site user, I want to start my first game easily, so that I can jump straight into the fun.** | The homepage contains a 'Start' button which allows the user to jump straight in making the process from loading the page to playing the game quick and seamless |
+| **As a new site user, I want to see my score and progress, so that I feel motivated to improve and replay.** | On the Game screen at the bottom is a display for the score which updates automatically as they progress and at the end of the game the level they reached is displayed **encouraging a replay** and their high score is updated for the next game. |
 
 #### Returning Visitors
 
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
-| **As a returning site user, I want the quiz experience to be consistent and function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.** | The site uses a **responsive design** that adapts to different screen sizes. All interactive elements remain **functional and accessible** on various devices. |
-| **As a returning site user, I want to select the difficulty level of quiz questions, so that I can tailor the challenge to my knowledge and skill level.** | The **Difficulty Panel** provides **three difficulty options** that allow users to choose their preferred level. The choice is stored and applied to the quiz. |
-| **As a returning site user, I want to easily restart the quiz, so that I can immediately try again if I want to improve my score.** | The **Results Panel** includes a **"Restart Quiz" button**, allowing users to replay instantly without navigating back to the homepage. |
+| **As a returning site user, I want the game experience to be consistent and function correctly across different devices, so that I can enjoy playing whether I’m on desktop, tablet, or mobile.** | The site uses a responsive design that adapts to different screen sizes. All interactive elements remain functional and accessible on various devices and browsers. |
 
 #### Frequent Site Visitors
 
 | Goals | How were they achieved? |
 | ------ | -------------------------- |
-| **As a frequent site user, I want to see a leaderboard of top quiz scores, so that I can compare my performance with others and stay motivated to improve.** | The **Leaderboard Panel** dynamically updates with the **top 10 scores**. Users can submit their name and see their ranking after completing a quiz. |
-| **As a frequent site user, I want to have a fair scoring system where I earn points based on correct answers, so that I feel rewarded for my knowledge and accuracy.** | The **scoring system awards 10 points per correct answer**, ensuring fairness. The score **updates in real-time** during the quiz and is accurately recorded. |
-
+| **As a frequent site user, I want to see a leaderboard of top game scores, so that I can compare my performance with others and stay motivated to improve.** | The Leaderboard page dynamically updates with the top 10 scores. Users can submit their name and see their ranking after completing a run of the game. |
 ---
 
 <a id=features-test></a>
@@ -226,197 +220,141 @@ To ensure that the colours used on the webpage weren't going to make it harder f
 
 ### Existing Features
 
-### Home Page Panel
+### Home Page page
 
 #### Overview
-The **Home Page Panel** serves as the entry point for the DJ Silver Soul Pop Quiz, introducing users to the game and providing navigation options to key sections. It ensures a smooth onboarding experience while maintaining a visually engaging and accessible design.
+The **Home Page** serves as the entry point, introducing users to the game and providing navigation options to key sections. It ensures a smooth experience for the user with an engaging simple aesthetic.
 
 #### Features Tested:
 - **Introduction & Engagement:**  
-  - The panel presents a **clear and engaging welcome message** that highlights the quiz's theme and challenge.  
-  - The description uses **bold text (`<strong>`)** to emphasize key points like the quiz title and leaderboard competition.  
-  - The message is **formatted properly**, ensuring readability across different devices.  
+  - The page presents a clear and engaging welcome message that highlights what type of game it is and immediately tempts the user to a challenge.  
+  - The description uses clear bold to make the text standout. 
+  - The message is formatted properly, ensuring readability across different devices.  
 
 - **Navigation & Call to Action:**  
-  - The **"Rules" button (`#rules_btn`)** correctly navigates users to the rules panel.  
-  - The **"Leaderboard" button (`#leaderboard_btn`)** allows users to view the top scores.  
-  - The **"Start" button (`#start_btn`)** initiates the quiz and smoothly transitions users into the game.  
-  - **ARIA labels** are applied to all buttons for improved accessibility.  
+  - The "Rules" button (`#rules`) correctly navigates users to the rules page.  
+  - The "Leaderboard" button (`#leaderboard`) allows users to view the top scores.  
+  - The "Start" button (`#start`) initiates and smoothly transitions users into the game.  
+  - ARIA labels are applied to all buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The **site’s branding is consistently maintained**, with a fun and engaging theme.  
-  - The **layout is structured for easy interaction**, ensuring a smooth user experience.  
-  - The **buttons are clearly labeled** and appropriately styled, making navigation intuitive.  
+  - The site’s branding is consistently maintained, with a simple digital/arcade design.  
+  - The layout is structured using an unordered list with the (`<ul>`) tag for easy readability.  
+  - The buttons are clearly labeled and appropriately styled, making navigation intuitive.
+  -  - Semantic HTML elements (`<ul>`, `<li>`, `<button>`) improve screen reader support.  
 
 - **Responsiveness & Accessibility:**  
-  - The home page panel adapts well to **various screen sizes** (desktop, tablet, mobile).  
-  - The **buttons are keyboard-navigable**, ensuring usability for all users.  
-  - **Semantic HTML elements** (`<h2>`, `<p>`, `<button>`) enhance screen reader compatibility.  
+  - The home page adapts well to various screen sizes (desktop, tablet, mobile).    
+  -   
 
 - **Performance & Functionality:**  
-  - The **home page panel loads quickly**, with no missing or broken elements.  
-  - The **buttons work correctly**, allowing users to navigate between sections without errors.  
-  - The interface ensures that **users cannot start the quiz without first engaging with the home panel**.  
+  - The home page loads quickly, with no missing or broken elements.  
+  - The buttons work correctly, allowing users to navigate between sections without errors.  
 
 <details>
-<summary>Click here to see the Home Page Panel</summary>
+<summary>Click here to see the Home Page page</summary>
 
-![Home Page Panel](documentation/testing-features-home.webp)
+![Home Page](assets/documentation/am_i_responsive_home.PNG)
 
 </details>
 <br>
 <hr>
 
-### Rules Panel
+### Rules page
 
 #### Overview
-The **Rules Panel** provides users with clear and concise guidelines on how the quiz functions before they begin. It ensures players understand the gameplay mechanics, scoring system, and time constraints while maintaining an intuitive and accessible layout.
+The **Rules Page** provides users with clear and concise guidelines on how the game. It ensures players understand the gameplay mechanics, scoring and lives systems.
 
 #### Features Tested:
 - **Rules Display & Readability:**  
-  - The panel correctly presents **five key quiz rules** in an ordered list (`<ol>`).  
-  - The rules are structured for **easy reading** and clearly outline:  
-    - Difficulty selection  
-    - Time limits for answering (`15 seconds per question`)  
-    - Answer selection restrictions  
-    - Scoring system (`10 points per correct answer`)  
-  - The text is **formatted properly** to maintain readability on different devices.  
+  - The page correctly presents the key game rules in a list format using the unordered list tag, (`<ul>`).  
+  - The rules are structured for easy reading and clearly outline:  
+    - How the sequence is shown  
+    - The users task (relaying the sequence)  
+    - How the lives system works if an input is incorrect
+    - Scoring system, how it works when an input is correct
+  - The text is easily readable on all devices. 
 
 - **Navigation & Call to Action:**  
-  - The **"Start Quiz" button (`#rules_start_btn`)** begins the quiz and transitions users smoothly.  
-  - The **"Exit" button (`#exit_btn`)** allows users to return to the home page.  
-  - **ARIA labels** are applied to all buttons for improved accessibility.  
+  - The "Start" button (`#start2`) begins the game and transitions users smoothly.  
+  - The "Exit" button (`#leaderboard2`) allows users to return to the home page.  
+  - ARIA labels are applied to all buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The rules panel follows the **consistent styling of the site**, ensuring visual uniformity.  
-  - The **button layout is intuitive**, with "Exit" and "Start Quiz" options clearly defined.  
-  - The structured **ordered list (`<ol>`)** ensures proper formatting across devices.  
+  - The rules page follows the consistent styling of the site, ensuring visual uniformity.  
+  - The button layout is intuitive, with "Exit" and "Start" options clearly defined.  
+  - The list structure ensures that it is formatted correctly across all devices.  
 
 - **Responsiveness & Accessibility:**  
-  - The panel scales properly across **various screen sizes** (desktop, tablet, mobile).  
-  - The **buttons are keyboard-navigable**, ensuring accessibility for all users.  
-  - **Semantic HTML elements** (`<h2>`, `<ol>`, `<li>`, `<button>`) improve screen reader support.  
+  - The buttons change from a row format to a collumn for mobile devices to adjust to screensize.  
+  - The grid adjusts it's size for smaller devices such as mobiles.
+  - Semantic HTML elements (`<h2>`, `<ul>`, `<li>`, `<button>`) improve screen reader support.  
 
 - **Performance & Functionality:**  
-  - The **rules panel loads quickly**, with no broken elements or missing content.  
-  - The **"Start Quiz" button** correctly transitions users into the quiz.  
+  - The rules page loads quickly, with no broken elements or missing content.  
+  - The "Start" button correctly transitions users into the game.
+  - The "Leaderboard" button correctly transitions users to the leaderboard screen.  
 
 <details>
-<summary>Click here to see the Rules Panel</summary>
+<summary>Click here to see the Rules page</summary>
 
-![Rules Panel](documentation/testing-features-rules.webp)
+![Rules page](assets/documentation/am_i_responsive_rules.PNG)
 
 </details>
 <br>
 <hr>
 
-### Difficulty Panel
+### game page
 
 #### Overview
-The **Difficulty Panel** allows users to select their preferred quiz difficulty level before starting the game. The panel presents a fun, engaging theme while ensuring smooth interaction and navigation.
+The **game page** provides an interactive interface for uses to see and relay the given sequence. It dynamically updates the sequence, manages user responses, and displays the current score and lives aswell as displays the correct high score value if the user has played already. The page ensures a smooth and engaging game experience.
 
 #### Features Tested:
-- **Difficulty Selection Functionality:**  
-  - Users can select one of **three difficulty levels**:  
-    - 🎧 **Easy Listening** - "The warm-up" (`#easy`)  
-    - 🔥 **Medium** - "Peak Time questions" (`#medium`)  
-    - 🚀 **Hard** - "After hours - for true fans" (`#hard`)  
-  - The correct difficulty selection is stored and passed to the quiz logic.  
-  - Only **one difficulty option can be selected at a time**.  
+- **Sequence Display & Dynamic Updates:**  
+  - The sequences are shown correctly with delays inbetween.
+  - The sequence updates for the next 'level' without issues.
+  - The timing of the displayed sequence is consistent everytime. 
+  - (`#high_score`) will display the correct value if a game has already been played by the user.
 
-- **Navigation & Call to Action:**  
-  - The **"Exit" button (`#diff_exit_btn`)** returns users to the home page.  
-  - **ARIA labels** are applied to all buttons for better accessibility.  
-  - The panel ensures users **cannot proceed without selecting a difficulty level**.  
+- **Checking User Input**  
+- The game identifies the users input correctly.
+- Checks if it is correct and displays the selected squares.
+
+- **Score * Lives Tracking*:**  
+  - The (`#score`) will be updated if the user relays the same sequence.
+  - The (`#lives`) will be updated if the user relays the incorrect sequence.  
+  - Users will recieve immediate feedback with updated (`#score`) and (`#lives`) values.
+  - The (#`high_score`) will be updated if the current score value is larger.
 
 - **Branding & Design:**  
-  - The panel follows the **site’s music-themed branding**, with engaging descriptions and icons.  
-  - The **buttons are well-spaced and clearly labeled**, making selection easy.  
-  - The interface maintains a **fun, inviting experience** that aligns with the quiz’s theme.  
+  - The game page maintains a consistent theme and visual design with the rest of the site.  
+  - The layout is structured for easy readability and user engagement.    
 
 - **Responsiveness & Accessibility:**  
-  - The difficulty panel **scales properly** on different screen sizes (desktop, tablet, mobile).  
-  - The **buttons are keyboard-navigable**, ensuring accessibility for all users.  
-  - The use of **semantic HTML elements** (`<h2>`, `<p>`, `<button>`) supports screen reader functionality.  
+  - The game adapts correctly between mobile and larger screens.(desktop, tablet, mobile).  
 
 - **Performance & Functionality:**  
-  - The **difficulty selection buttons** work as expected and apply the correct settings.  
-  - The **panel loads efficiently**, with no broken styling or layout issues.  
-  - The interface prevents users from **accidentally skipping difficulty selection** before starting the quiz.  
+  - The game displays the sequences with the correct delay without any broken elements.
+  - The game replays the same sequence after an incorrect input correctly without broken elements.
+  - User input is disabled (While a sequence is being displayed) and enables (when the sequence has finished playing) at the correct time.
 
 <details>
-<summary>Click here to see the Difficulty Panel</summary>
+<summary>Click here to see the game page</summary>
 
-![Difficulty Panel](documentation/testing-features-difficulty.webp)
+![game page](assets/documentation/am_i_responsive_game.PNG)
 
 </details>
 <br>
 <hr>
 
-### Quiz Panel
+### End Page
 
 #### Overview
-The **Quiz Panel** provides an interactive interface for users to answer music-related questions. It dynamically updates the question, tracks the timer, manages user responses, and displays the current score. The panel ensures a smooth and engaging quiz experience.
-
-#### Features Tested:
-- **Question Display & Dynamic Updates:**  
-  - The **question number (`#questionNo`)** correctly increments as users progress through the quiz.  
-  - Questions and answer choices are **dynamically loaded from an API** and update correctly.  
-  - The **selected answer buttons (`.answer_btn`)** register clicks and validate responses appropriately.  
-
-- **Timer Functionality:**  
-  - The **quiz timer (`#timer_secs`)** starts at 15 seconds and counts down correctly and displays "Time's Up" when it ends.  
-  - The **progress bar (`.time_line`)** updates visually as time decreases.  
-  - If time expires, the quiz correctly **prevents further answer selection** and moves to the next question.  
-
-- **Answer Selection & Feedback:**  
-  - The **answer buttons (`.answer_btn`)** highlight correct or incorrect responses.  
-  - Once an answer is chosen, **users cannot change their selection** before the next question appears.  
-  - The system registers correct answers and updates the **score (`#score_total`)** dynamically by 10 points per correct answer.  
-
-- **Navigation & Call to Action:**  
-  - The **"Next" button (`#next_btn`)** only becomes available after a user selects an answer or the timer runs out.  
-  - The **"Exit" button (`#quiz_exit_btn`)** correctly navigates back to the home page.  
-  - **ARIA labels** are used on buttons for better accessibility.  
-
-- **Score Tracking & Display:**  
-  - The **score section (`.quiz_score`)** updates after each question.  
-  - Users receive immediate feedback on their **current score (`#score_total`)**.  
-  - The game ensures **accurate tracking of correct answers** throughout the session.  
-
-- **Branding & Design:**  
-  - The quiz panel maintains a **consistent theme and visual design** with the rest of the site.  
-  - The layout is structured for **easy readability and user engagement**.  
-  - The **use of icons (`fa-solid fa-star` for scores, `fa-solid fa-arrow-right` for next question)** enhances the UI experience.  
-
-- **Responsiveness & Accessibility:**  
-  - The quiz adapts well to **different screen sizes** (desktop, tablet, mobile).  
-  - The **buttons are keyboard-navigable**, allowing non-mouse users to interact with the quiz.  
-  - **Semantic HTML elements** (`<h2>`, `<p>`, `<button>`) improve screen reader support.  
-
-- **Performance & Functionality:**  
-  - The quiz **loads questions efficiently** without delays or broken elements.  
-  - Users **cannot proceed to the next question** without answering or the timer expiring.  
-  - The **quiz handles incorrect or missing API data gracefully** without breaking functionality.  
-
-<details>
-<summary>Click here to see the Quiz Panel</summary>
-
-![Quiz Panel](documentation/testing-features-quiz.webp)
-
-</details>
-<br>
-<hr>
-
-### Results Panel
-
-#### Overview
-The **Results Panel** provides users with a summary of their quiz performance, displaying their final score and offering them the chance to submit their name to the leaderboard. It also includes navigation options to restart the quiz or exit to the home page.
+The **End page** provides users with a clear message to explain that the game has ended. It displays the message 'You ran out of Lives' aswell as the level they achieved. It gives a prompt for the users name and saves it locally for the leaderboard and then continues to the home page.
 
 #### Features Tested:
 - **Score Display & Feedback:**  
-  - The panel **correctly displays** the user’s final score within the `<span id="score_number">`.  
-  - A motivational message is included, reinforcing engagement with **"Top of the Pops"** encouragement.  
+  - The page correctly displays the user’s final score with `document.getElementById("end_score").innerText = You made it to Level: ${game.score}`;.
 
 - **Leaderboard Submission Functionality:**  
   - The **name input field (`#user_name`)** allows users to enter a name (up to 20 characters).  
@@ -424,52 +362,52 @@ The **Results Panel** provides users with a summary of their quiz performance, d
   - The **"Submit" button (`#submit_score`)** correctly registers the name and score in the leaderboard.  
 
 - **Navigation & Call to Action:**  
-  - The **"Exit" button (`#quit_quiz`)** returns users to the home page.  
-  - The **"Restart Quiz" button (`#restart_quiz`)** allows users to start a new quiz session instantly.  
+  - The **"Exit" button (`#quit_game`)** returns users to the home page.  
+  - The **"Restart game" button (`#restart_game`)** allows users to start a new game session instantly.  
   - **ARIA labels** are applied to buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The panel maintains a **consistent visual style** with the rest of the site.  
+  - The page maintains a **consistent visual style** with the rest of the site.  
   - The **input field and buttons** are clearly distinguishable and properly styled.  
   - The layout is structured to ensure easy readability and interaction.  
 
 - **Responsiveness & Accessibility:**  
-  - The results panel adapts well to different **screen sizes** (desktop, tablet, mobile).  
+  - The End page adapts well to different **screen sizes** (desktop, tablet, mobile).  
   - The **form elements (`<input>`, `<button>`)** are accessible via keyboard navigation and screen readers.  
   - The use of **semantic HTML elements** (`<h2>`, `<p>`, `<form>`, `<input>`, `<button>`) enhances accessibility.  
 
 - **Performance & Functionality:**  
-  - The **score updates dynamically** upon quiz completion.  
+  - The **score updates dynamically** upon game completion.  
   - The **submission form works correctly**, preventing invalid inputs and successfully adding scores to the leaderboard.  
   - The page loads **efficiently** without broken elements or layout shifts.  
 
 <details>
-<summary>Click here to see the Results Panel</summary>
+<summary>Click here to see the End page</summary>
 
-![Results Panel](documentation/testing-features-results.webp)
+![End page](documentation/testing-features-results.webp)
 
 </details>
 <br>
 <hr>
 
-### Leaderboard Panel
+### Leaderboard page
 
 #### Overview
-The **Leaderboard Panel** provides users with a ranked list of the top 10 scores, dynamically updating based on quiz performance. It enhances user engagement by displaying competitive scores and offering options to restart or exit the quiz.
+The **Leaderboard page** provides users with a ranked list of the top 10 scores, dynamically updating based on game performance. It enhances user engagement by displaying competitive scores and offering options to restart or exit the game.
 
 #### Features Tested:
 - **Leaderboard Display & Dynamic Updates:**  
   - The **top 10 scores** are displayed in a structured table format.  
-  - The `<tbody>` section dynamically updates with user scores after quiz completion.  
+  - The `<tbody>` section dynamically updates with user scores after game completion.  
   - **Ranks, names, and scores** are correctly displayed in descending order.  
 
 - **Navigation & Call to Action:**  
   - The **"Exit" button** allows users to return to the home page.  
-  - The **"Restart Quiz" button** lets users immediately begin a new quiz session.  
+  - The **"Restart game" button** lets users immediately begin a new game session.  
   - **ARIA labels** are applied to buttons for improved accessibility.  
 
 - **Branding & Design:**  
-  - The panel maintains the **consistent styling** of the site.  
+  - The page maintains the **consistent styling** of the site.  
   - Uses **clear, readable fonts** and a structured table format for clarity.  
   - Buttons follow the **expected UI conventions** (`outline_btn` for exit, `reverse_btn` for restart).  
 
@@ -479,97 +417,14 @@ The **Leaderboard Panel** provides users with a ranked list of the top 10 scores
   - Button labels and interactive elements comply with **ARIA accessibility guidelines**.  
 
 - **Performance & Functionality:**  
-  - The leaderboard updates **instantly** after the quiz is completed.  
+  - The leaderboard updates **instantly** after the game is completed.  
   - The **Exit and Restart buttons** work as expected, redirecting users appropriately.  
   - The page loads **without delays or broken styling**, ensuring a smooth user experience.  
 
 <details>
-<summary>Click here to see the Leaderboard Panel</summary>
+<summary>Click here to see the Leaderboard page</summary>
 
-![Leaderboard Panel](documentation/testing-features-leaderboard.webp)
-
-</details>
-<br>
-<hr>
-
-### 404 Page
-
-#### Overview
-The **404 Page Not Found** error page provides a fun and engaging experience for users who land on a non-existent or unavailable page. It embraces the **musical quiz theme** by presenting a playful message that keeps users entertained while guiding them back to the quiz.
-
-#### Features Tested:
-- **Clear & Engaging Messaging:**  
-  - The page displays a **music-themed error message**: *"404: Question Not Found!"*  
-  - The wording aligns with the **pop quiz theme**, making the experience more engaging.  
-  - Avoids overly technical language and reassures users they can easily navigate back.
-
-- **Navigation & Call to Action:**  
-  - Provides a **link back to the quiz homepage** to ensure users can quickly resume their session.  
-  - Uses an **ARIA label** for accessibility, ensuring screen readers describe the link clearly.  
-  - Prevents users from feeling "stuck" by offering a clear way forward.
-
-- **Branding & Design:**  
-  - Maintains **branding consistency** with the rest of the website.  
-  - Features an **error icon (fa-solid fa-ban)** to visually indicate an issue.  
-  - Uses a **friendly, playful tone** that aligns with the quiz experience.
-  - Includes a **CSS keyframe animation** applied to the `<h2>` element to create a subtle shake effect, reinforcing the idea of an "error" or "glitch."  
-  - The animation enhances user engagement without being distracting.  
-
-- **Responsiveness & Accessibility:**  
-  - The page adapts well to different **screen sizes** and devices (desktop, tablet, mobile).  
-  - Uses **semantic HTML** (e.g., `<h2>` for headings, `<p>` for descriptions) to enhance readability.  
-  - ARIA labels improve usability for **assistive technologies**, ensuring smooth navigation.  
-
-- **Performance & Functionality:**  
-  - The **homepage link** works correctly and redirects users back to the quiz.  
-  - The page **loads quickly**, even if the requested URL does not exist.  
-  - The **error icon and text display correctly** without any layout shifts or broken styling.  
-
-<details>
-<summary>Click here to see the 404 page</summary>
-
-![404 page](documentation/testing-features-404.webp)
-
-</details>
-<br>
-<hr>
-
-### 500 Page
-
-#### Overview
-The **500 Internal Server Error page** provides a fun, engaging message that reassures users when a server-side issue occurs. It maintains a **musical theme** that aligns with the site’s branding while guiding users toward possible solutions.
-
-#### Features Tested:
-- **Clear & Engaging Messaging:**  
-  - The page presents a humorous and **on-brand error message**: *"The beat stopped, and the server lost the rhythm!"*  
-  - Avoids technical jargon and reassures users that the issue is being addressed.
-
-- **Navigation & Call to Action:**  
-  - Provides a **reload option** to encourage users to retry accessing the site.  
-  - Includes a **link back to the homepage** for easy recovery.  
-  - Uses **ARIA labels** to enhance accessibility for screen readers.
-
-- **Branding & Design:**  
-  - Maintains the **musical theme** with a relevant message.  
-  - Uses an **error icon (fa-solid fa-triangle-exclamation)** to visually indicate an issue.  
-  - Consistent color scheme and typography ensure a seamless user experience.
-  - Includes a **CSS keyframe animation** applied to the `<h2>` element to create a subtle shake effect, reinforcing the idea of an "error" or "glitch."  
-  - The animation enhances user engagement without being distracting.
-
-- **Responsiveness & Accessibility:**  
-  - The page adapts well to different **screen sizes** and devices (desktop, tablet, mobile).  
-  - Uses **semantic HTML** (e.g., `<h2>` for headings, `<p>` for descriptions) for better readability.  
-  - ARIA labels improve usability for **assistive technologies**.
-
-- **Performance & Functionality:**  
-  - The **homepage link** and **reload option** function as expected.  
-  - The page **loads quickly**, even during server issues.  
-  - The **error icon and text display correctly** without layout shifts.
-
-<details>
-<summary>Click here to see the 500 page</summary>
-
-![500 page](documentation/testing-features-500.webp)
+![Leaderboard page](documentation/testing-features-leaderboard.webp)
 
 </details>
 <br>
@@ -583,22 +438,22 @@ The **500 Internal Server Error page** provides a fun, engaging message that rea
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Rules** button | The **rules** panel should open, displaying instructions on how to play the quiz | Clicked on the **rules** button | The **rules** panel opened and displayed the instructions correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-rules.gif) |
-| **Leaderboard** button | The **leaderboard** panel should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** panel opened and displayed the top 10 scores correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-leaderboard.gif) |
-| **Start** button | The **difficulty** panel should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* quiz questions | Clicked on the **Start** button | The **difficulty** panel opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-home-start.gif) |
+| **Rules** button | The **rules** page should open, displaying instructions on how to play the game | Clicked on the **rules** button | The **rules** page opened and displayed the instructions correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-rules.gif) |
+| **Leaderboard** button | The **leaderboard** page should open and display the top 10 scores, ranked by position, player name, and score | Clicked on the **leaderboard** button | The **leaderboard** page opened and displayed the top 10 scores correctly | ✅ No fix needed | ![screenshot](documentation/testing-home-leaderboard.gif) |
+| **Start** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Start** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-home-start.gif) |
 | **Rules** and **Leaderboard** buttons - hover effect | When hovered over, the **Rules** and **Leaderboard** buttons should change to a white background with light blue text | Hovered over the **Rules** and **Leaderboard** buttons | The **Rules** and **Leaderboard** buttons changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-home-rules.webp) ![screenshot](documentation/testing-home-ruleshover.webp) ![screenshot](documentation/testing-home-leaderboard.webp) ![screenshot](documentation/testing-home-leaderboardhover.webp) |
 | **Start** button - hover effect | When hovered over, the **Start** button should change from dark blue text to white text | Hovered over the **Start** button | The **Start** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-home-start.webp) ![screenshot](documentation/testing-home-starthover.webp) |
 
 ---
 
-### Quiz Rules Page
+### game Rules Page
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Exit** button | The **rules** panel should close, revealing the home page panel | Clicked on the **Exit** button | The **rules** panel closed, and the home page panel was revealed | ✅ No fix needed | ![screenshot](documentation/testing-rules-exit.gif) |
-| **Start Quiz** button | The **difficulty** panel should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* quiz questions | Clicked on the **Start Quiz** button | The **difficulty** panel opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.gif) |
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-quiz-exit.webp) ![screenshot](documentation/testing-quiz-exithover.webp) |
-| **Start Quiz** button - hover effect | When hovered over, the **Start** button should change from dark blue text to white text | Hovered over the **Start** button | The **Start** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.webp) ![screenshot](documentation/testing-rules-starthover.webp) |
+| **Exit** button | The **rules** page should close, revealing the home page page | Clicked on the **Exit** button | The **rules** page closed, and the home page page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-rules-exit.gif) |
+| **Start game** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Start game** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.gif) |
+| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.webp) ![screenshot](documentation/testing-game-exithover.webp) |
+| **Start game** button - hover effect | When hovered over, the **Start** button should change from dark blue text to white text | Hovered over the **Start** button | The **Start** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-rules-start.webp) ![screenshot](documentation/testing-rules-starthover.webp) |
 
 ---
 
@@ -606,11 +461,11 @@ The **500 Internal Server Error page** provides a fun, engaging message that rea
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Exit** button | The **leaderboard** panel should close, revealing the **home page** panel | Clicked on the **Exit** button | The **leaderboard** panel closed, and the **home page** panel was revealed | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-exit.gif) |
-| **Restart Quiz** button | The **difficulty** panel should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* quiz questions | Clicked on the **Restart Quiz** button | The **difficulty** panel opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.gif) |
-| **Scores** are displayed | If the user achieves and submits a score that ranks within the top ten of previously submitted scores, it should be displayed in the  **leaderboard** table | Played the quiz and aimed to beat the lowest score in the current **leaderboard** | The highest scores in the top ten were successfully submitted and displayed in the **leaderboard** table | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-table.webp)
+| **Exit** button | The **leaderboard** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **leaderboard** page closed, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-exit.gif) |
+| **Restart game** button | The **difficulty** page should open, displaying three buttons that allow the user to choose between *Easy*, *Medium*, or *Hard* game questions | Clicked on the **Restart game** button | The **difficulty** page opened and displayed the three difficulty buttons | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.gif) |
+| **Scores** are displayed | If the user achieves and submits a score that ranks within the top ten of previously submitted scores, it should be displayed in the  **leaderboard** table | Played the game and aimed to beat the lowest score in the current **leaderboard** | The highest scores in the top ten were successfully submitted and displayed in the **leaderboard** table | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-table.webp)
 | **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-exit.webp) ![screenshot](documentation/testing-leaderboard-exithover.webp) |
-| **Restart Quiz** button - hover effect | When hovered over, the **Restart Quiz** button should change from dark blue text to white text | Hovered over the **Restart Quiz** button | The **Restart Quiz** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.webp) ![screenshot](documentation/testing-leaderboard-restarthover.webp) |
+| **Restart game** button - hover effect | When hovered over, the **Restart game** button should change from dark blue text to white text | Hovered over the **Restart game** button | The **Restart game** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-leaderboard-restart.webp) ![screenshot](documentation/testing-leaderboard-restarthover.webp) |
 
 ---
 
@@ -618,10 +473,10 @@ The **500 Internal Server Error page** provides a fun, engaging message that rea
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Easy** button | The **difficulty** panel should close, revealing the **Quiz** panel. The API should be called using the easy quiz URL | Clicked on the **Easy** button | The **difficulty** panel closed, the **Quiz** panel opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-easyapi.webp) |
-| **Medium** button | The **difficulty** panel should close, revealing the **Quiz** panel. The API should be called using the medium quiz URL | Clicked on the **Medium** button | The **difficulty** panel closed, the **Quiz** panel opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-mediumapi.webp) |
-| **Hard** button | The **difficulty** panel should close, revealing the **Quiz** panel. The API should be called using the hard quiz URL | Clicked on the **Hard** button | The **difficulty** panel closed, the **Quiz** panel opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-hardapi.webp) |
-| **Exit** button | The **difficulty** panel should close, revealing the **home page** panel | Clicked on the **Exit** button | The **difficulty** panel closed, and the **home page** panel was revealed | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-exit.gif) |
+| **Easy** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the easy game URL | Clicked on the **Easy** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-easyapi.webp) |
+| **Medium** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the medium game URL | Clicked on the **Medium** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-mediumapi.webp) |
+| **Hard** button | The **difficulty** page should close, revealing the **game** page. The API should be called using the hard game URL | Clicked on the **Hard** button | The **difficulty** page closed, the **game** page opened. The API call was logged to the console | ✅ No fix needed | ![screenshot](documentation/testing-manual-hardapi.webp) |
+| **Exit** button | The **difficulty** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **difficulty** page closed, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-exit.gif) |
 | **Difficulty** buttons - hover effect | When hovered over, the **difficulty** buttons should change from a dark blue background to a light blue background | Hovered over each **difficulty** button | The **difficulty** buttons changed from a dark blue background to a light blue background when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-hover.gif) |
 | **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-exit.webp) ![screenshot](documentation/testing-difficulty-exithover.webp) |
 
@@ -629,50 +484,50 @@ The **500 Internal Server Error page** provides a fun, engaging message that rea
 
 | Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Corrupt API Data | The quiz should gracefully handle missing or broken data | Modified API url to return incomplete data and selected each difficulty button to activate API call | Quiz was redirected to 500 error page | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-500.gif) |
-| Score Reset on Restart | Score should reset to `0` when restarting quiz | Clicked on each **Difficulty** button in turn to restart the quiz | Score was reset to `0` each time | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-restart.gif) |
+| Corrupt API Data | The game should gracefully handle missing or broken data | Modified API url to return incomplete data and selected each difficulty button to activate API call | game was redirected to 500 error page | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-500.gif) |
+| Score Reset on Restart | Score should reset to `0` when restarting game | Clicked on each **Difficulty** button in turn to restart the game | Score was reset to `0` each time | ✅ No fix needed | ![screenshot](documentation/testing-difficulty-restart.gif) |
 
 ---
 
-### Quiz Page
+### game Page
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Question no.** indicator | After the quiz begins, the **question no.** indicator should increment by 1 each time the **Next button** is clicked after a question is answered or when the timer expires  | Clicked the **Next button** after the quiz began | The **Question No.** indicator incremented by **1** when the **Next button** was clicked | ✅ No fix needed | ![screenshot](documentation/testing-quiz-question.gif) |
-| **Timer** function | After the quiz begins, the **Timer** should count down from **15 to 0**. When the Timer reaches **0**, “Time’s up!” should be displayed. Upon clicking the **Next button**, the **Timer** should reset to “Time: 15” and start counting down again | Selected a **difficulty** level to start the quiz. Clicked the **Next** button to reset the **Timer** | The quiz began, and the **Timer** counted down from **15 to 0**. “Time’s up!” was displayed. After clicking the **Next** button, the **Timer** reset to “Time: 15” and restarted the countdown | ✅ No fix needed | ![screenshot](documentation/testing-quiz-timer.gif) |
-| **Time line** function | After the quiz begins, the Time Line should decrease in width by 1/15 for each second the timer decrements | Selected a **difficulty** level to start the quiz. Clicked the **Next** button to reset the **Timer** | The quiz began, and the **Time Line** decreased in width by 1/15 each second as the timer decremented | ✅ No fix needed | ![screenshot](documentation/testing-quiz-timer.gif) |
-| **Timer pause** function | After a question is answered, the **Timer** and **Time Line** should pause immediately | Answered a question | The **Timer** and **Time Line** paused immediately | ✅ No fix needed | ![screenshot](documentation/testing-quiz-pause.gif) |
-| **Quiz questions** and **answers** | A new set of **quiz questions** and **answers** should be displayed each time the quiz begins or the **Next** button is clicked | Selected a **difficulty** level to start the quiz. Clicked the **Next** button to access the next question | A new set of **quiz questions** and **answers** was displayed each time | ✅ No fix needed | ![screenshot](documentation/testing-quiz-questions.gif) |
-| **Correct** and **Incorrect** answer indicators | When an answer is submitted: if it is **correct**, the border of the selected answer button should turn **green**, and a **green tick icon** should appear to the right of the answer text inside the button. If the answer is **incorrect**, the border of the selected answer button should turn **red**, and a **red cross icon** should appear to the right of the answer text inside the button. If the **timer expires**, the correct answer should be highlighted with a **green border** and a **green tick icon** | Selected both **correct** and **incorrect** answers. Allowed the timer to expire | When a **correct** answer was selected, the border turned **green**, and a **green tick icon** appeared. When an **incorrect** answer was selected, the border turned **red**, and a **red cross icon** appeared. When the **timer** expired, the **correct** answer was displayed with a **green** border and a **green tick icon** | ✅ No fix needed | ![screenshot](documentation/testing-quiz-correct.webp) ![screenshot](documentation/testing-quiz-incorrect.webp) |
-| **Score** function | When a question is answered correctly, the **score** should increment by **10**, up to a maximum of **100** for 10 correct answers | Answered **10** questions correctly | The **score** incremented by **10** for each correct answer, reaching a maximum of **100** for **10** correct answers | ✅ No fix needed | ![screenshot](documentation/testing-quiz-score.gif) |
-| **Next** button | When an answer is selected or when the timer expires, revealing the correct and/or incorrect answers, the **Next** button should appear. Upon clicking the **Next** button, the **next question** should be displayed, the timer should reset, the **question number** should increment, and the **Next** button should disappear | Selected an answer and allowed the timer to expire | When an answer was selected or the timer expired, the correct and/or incorrect answers were displayed, and the **Next** button appeared. Upon clicking the **Next** button, the next question was shown, the timer reset, the question number incremented, and the **Next** button disappeared | ✅ No fix needed | ![screenshot](documentation/testing-quiz-next.gif) |
-| **Exit** button | The **quiz** panel should close and the quiz should end, revealing the **home page** panel | Clicked on the **Exit** button | The **difficulty** panel closed and the quiz ended, and the **home page** panel was revealed | ✅ No fix needed | ![screenshot](documentation/testing-quiz-exit.gif) |
-| **Answer** buttons - hover effect | When hovered over, the **Answer** buttons should change from a dark blue background to a light blue background | Hovered over each **Answer** button | The **Answer** buttons changed from a dark blue background to a light blue background when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-quiz-hover.gif) |
-| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-quiz-exit.webp) ![screenshot](documentation/testing-quiz-exithover.webp) |
-| **Next** button - hover effect | When hovered over, the **Next** button should change from a green background to a white background | Hovered over the **Next** button | The **Next** button changed from a green background to a white background | ✅ No fix needed | ![screenshot](documentation/testing-quiz-next.webp) ![screenshot](documentation/testing-quiz-nexthover.webp) |
+| **Question no.** indicator | After the game begins, the **question no.** indicator should increment by 1 each time the **Next button** is clicked after a question is answered or when the timer expires  | Clicked the **Next button** after the game began | The **Question No.** indicator incremented by **1** when the **Next button** was clicked | ✅ No fix needed | ![screenshot](documentation/testing-game-question.gif) |
+| **Timer** function | After the game begins, the **Timer** should count down from **15 to 0**. When the Timer reaches **0**, “Time’s up!” should be displayed. Upon clicking the **Next button**, the **Timer** should reset to “Time: 15” and start counting down again | Selected a **difficulty** level to start the game. Clicked the **Next** button to reset the **Timer** | The game began, and the **Timer** counted down from **15 to 0**. “Time’s up!” was displayed. After clicking the **Next** button, the **Timer** reset to “Time: 15” and restarted the countdown | ✅ No fix needed | ![screenshot](documentation/testing-game-timer.gif) |
+| **Time line** function | After the game begins, the Time Line should decrease in width by 1/15 for each second the timer decrements | Selected a **difficulty** level to start the game. Clicked the **Next** button to reset the **Timer** | The game began, and the **Time Line** decreased in width by 1/15 each second as the timer decremented | ✅ No fix needed | ![screenshot](documentation/testing-game-timer.gif) |
+| **Timer pause** function | After a question is answered, the **Timer** and **Time Line** should pause immediately | Answered a question | The **Timer** and **Time Line** paused immediately | ✅ No fix needed | ![screenshot](documentation/testing-game-pause.gif) |
+| **game questions** and **answers** | A new set of **game questions** and **answers** should be displayed each time the game begins or the **Next** button is clicked | Selected a **difficulty** level to start the game. Clicked the **Next** button to access the next question | A new set of **game questions** and **answers** was displayed each time | ✅ No fix needed | ![screenshot](documentation/testing-game-questions.gif) |
+| **Correct** and **Incorrect** answer indicators | When an answer is submitted: if it is **correct**, the border of the selected answer button should turn **green**, and a **green tick icon** should appear to the right of the answer text inside the button. If the answer is **incorrect**, the border of the selected answer button should turn **red**, and a **red cross icon** should appear to the right of the answer text inside the button. If the **timer expires**, the correct answer should be highlighted with a **green border** and a **green tick icon** | Selected both **correct** and **incorrect** answers. Allowed the timer to expire | When a **correct** answer was selected, the border turned **green**, and a **green tick icon** appeared. When an **incorrect** answer was selected, the border turned **red**, and a **red cross icon** appeared. When the **timer** expired, the **correct** answer was displayed with a **green** border and a **green tick icon** | ✅ No fix needed | ![screenshot](documentation/testing-game-correct.webp) ![screenshot](documentation/testing-game-incorrect.webp) |
+| **Score** function | When a question is answered correctly, the **score** should increment by **10**, up to a maximum of **100** for 10 correct answers | Answered **10** questions correctly | The **score** incremented by **10** for each correct answer, reaching a maximum of **100** for **10** correct answers | ✅ No fix needed | ![screenshot](documentation/testing-game-score.gif) |
+| **Next** button | When an answer is selected or when the timer expires, revealing the correct and/or incorrect answers, the **Next** button should appear. Upon clicking the **Next** button, the **next question** should be displayed, the timer should reset, the **question number** should increment, and the **Next** button should disappear | Selected an answer and allowed the timer to expire | When an answer was selected or the timer expired, the correct and/or incorrect answers were displayed, and the **Next** button appeared. Upon clicking the **Next** button, the next question was shown, the timer reset, the question number incremented, and the **Next** button disappeared | ✅ No fix needed | ![screenshot](documentation/testing-game-next.gif) |
+| **Exit** button | The **game** page should close and the game should end, revealing the **home page** page | Clicked on the **Exit** button | The **difficulty** page closed and the game ended, and the **home page** page was revealed | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.gif) |
+| **Answer** buttons - hover effect | When hovered over, the **Answer** buttons should change from a dark blue background to a light blue background | Hovered over each **Answer** button | The **Answer** buttons changed from a dark blue background to a light blue background when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-hover.gif) |
+| **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![screenshot](documentation/testing-game-exit.webp) ![screenshot](documentation/testing-game-exithover.webp) |
+| **Next** button - hover effect | When hovered over, the **Next** button should change from a green background to a white background | Hovered over the **Next** button | The **Next** button changed from a green background to a white background | ✅ No fix needed | ![screenshot](documentation/testing-game-next.webp) ![screenshot](documentation/testing-game-nexthover.webp) |
 
-### ⛔️ Quiz Page - Negative Testing Scenarios
+### ⛔️ game Page - Negative Testing Scenarios
 
 | Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Timer** Expiry | Should disable answer buttons when an answer is selected or when the time is up | Selected an answer and allowed timer to expire. Clicked on each answer button | Answer buttons were disabled | ✅ No fix needed | ![screenshot](documentation/testing-quiz-disable.gif) |
-| Answering Questions Rapidly | Answering questions rapidly and clicking **Next** too fast should not break the quiz | Answered questions and clicked **next** rapidly | Questions were loaded and displayed as expected | ✅ No fix needed | ![screenshot](documentation/testing-quiz-rapid.gif) |
-| Selecting Multiple Answers | Only one answer should be selected and all answer buttons should be disabled | Selected one answer | All answer buttons were disabled as expected | ✅ No fix needed | ![screenshot](documentation/testing-quiz-disable.gif) |
+| **Timer** Expiry | Should disable answer buttons when an answer is selected or when the time is up | Selected an answer and allowed timer to expire. Clicked on each answer button | Answer buttons were disabled | ✅ No fix needed | ![screenshot](documentation/testing-game-disable.gif) |
+| Answering Questions Rapidly | Answering questions rapidly and clicking **Next** too fast should not break the game | Answered questions and clicked **next** rapidly | Questions were loaded and displayed as expected | ✅ No fix needed | ![screenshot](documentation/testing-game-rapid.gif) |
+| Selecting Multiple Answers | Only one answer should be selected and all answer buttons should be disabled | Selected one answer | All answer buttons were disabled as expected | ✅ No fix needed | ![screenshot](documentation/testing-game-disable.gif) |
 
 ---
 
-### Results Page
+### End page
 
 | Component | Expected Behavior | Testing Steps | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| **Score** display | The score achieved in the quiz should be correctly displayed as `You scored: x out of 100` | Completed the quiz and noted the score | The score was displayed correctly | ✅ No fix needed | ![Screenshot](documentation/testing-results-scorestar.webp) |
-| **Exit** button | The **results** panel should close, revealing the **home page** panel | Clicked on the **Exit** button | The **results** panel closed and the **home page** panel was revealed | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.gif) |
-| **Leaderboard** Name Submission | After the quiz is completed. A name of up to 20 characters can be entered into the form field and submitted to the leaderboard by clicking the submit button. If the user has a top 10 score, their entry is displayed on the leaderboard. | After the quiz was completed, a 20 character name was entered into the form and submitted. | The name and score appeared in the leaderboard table. | ✅ No fix needed | ![Screenshot](documentation/testing-results-leaderboard.gif) |
+| **Score** display | The score achieved in the game should be correctly displayed as `You scored: x out of 100` | Completed the game and noted the score | The score was displayed correctly | ✅ No fix needed | ![Screenshot](documentation/testing-results-scorestar.webp) |
+| **Exit** button | The **results** page should close, revealing the **home page** page | Clicked on the **Exit** button | The **results** page closed and the **home page** page was revealed | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.gif) |
+| **Leaderboard** Name Submission | After the game is completed. A name of up to 20 characters can be entered into the form field and submitted to the leaderboard by clicking the submit button. If the user has a top 10 score, their entry is displayed on the leaderboard. | After the game was completed, a 20 character name was entered into the form and submitted. | The name and score appeared in the leaderboard table. | ✅ No fix needed | ![Screenshot](documentation/testing-results-leaderboard.gif) |
 | **Submit** button - hover effect | When hovered over, the **Submit** button should change from dark blue text to white text | Hovered over the **Submit** button | The **Submit** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-submitbutton.webp) ![Screenshot](documentation/testing-results-submitbuttonhover.webp) |
 | **Exit** button - hover effect | When hovered over, the **Exit** button should change to a white background with light blue text | Hovered over the **Exit** button | The **Exit** button changed to a white background with light blue text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-exit.webp) ![Screenshot](documentation/testing-results-exithover.webp) |
-| **Restart Quiz** button - hover effect | When hovered over, the **Restart Quiz** button should change from dark blue text to white text | Hovered over the **Restart Quiz** button | The **Restart Quiz** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-restart.webp) ![Screenshot](documentation/testing-results-restarthover.webp) |
+| **Restart game** button - hover effect | When hovered over, the **Restart game** button should change from dark blue text to white text | Hovered over the **Restart game** button | The **Restart game** button changed from dark blue text to white text when hovered over | ✅ No fix needed | ![Screenshot](documentation/testing-results-restart.webp) ![Screenshot](documentation/testing-results-restarthover.webp) |
 
-### ⛔️ Results Page - Negative Testing Scenarios
+### ⛔️ End page - Negative Testing Scenarios
 
 | Component | Expected Behavior | Negative Test Performed | Actual Result | Fix (if needed) | Screenshot |
 | --- | --- | --- | --- | --- | --- |

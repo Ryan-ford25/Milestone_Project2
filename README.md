@@ -512,11 +512,11 @@ To clone the repository:
 
 <a id=credits></a>
 
-## Credits 
 >
 ### Code
  * Understanding how to use 'localstorage.getItem and localStorage.setItem' was learned through [w3schools](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
  * Another README guide was provided by the Slack community [Youtube video](https://www.youtube.com/watch?v=l1DE7L-4eKQ)
+ * This [YouTube Tutorial](https://www.youtube.com/watch?v=cfF8APgW5xA&t=119s) was helpful in getting the users name input to appear on the leaderboard.
 
 ### Content
 
